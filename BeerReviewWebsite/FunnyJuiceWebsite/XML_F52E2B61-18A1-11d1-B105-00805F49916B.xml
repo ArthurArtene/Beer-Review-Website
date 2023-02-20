@@ -1,0 +1,16 @@
+﻿<table>
+  <caption>Beers</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Style</th>
+      <th>ABV</th>
+      <th>review_overall</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Name</td>
+    </tr>
+  </tbody>
+</table>

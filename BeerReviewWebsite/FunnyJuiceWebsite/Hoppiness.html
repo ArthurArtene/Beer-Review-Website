@@ -1,0 +1,4691 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="Style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="Peers Beers (1).png" />
+</head>
+<body style="background-attachment: fixed; background-repeat: no-repeat;">
+    <style>
+
+        .topnav {
+            overflow: hidden;
+            background-color: black;
+        }
+
+            .topnav a {
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                padding: 15px;
+            }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            .dropdown .dropbtn {
+                font-size: 16px;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin-top: 40%;
+            }
+
+            .topnav a:hover, .dropdown:hover .dropbtn {
+                background-color: #d49708;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                float: none;
+                color: white;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+                width: 50%;
+                margin: 0;
+                width: 80%;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #d49708;
+                    color: black;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+            color: black;
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+            .sticky + .content {
+                padding-top: 60px;
+            }
+
+        .content {
+            padding: 16px;
+        }
+    </style>
+    <div class="topnav">
+        <a href="Main.html">Home</a>
+        <a href="topbeers.html">Top 100</a>
+        <a href="Reviews.html">By Reviews</a>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Filters
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Bitterness.html">Bitterness</a>
+                <a href="Sourness.html">Sourness</a>
+                <a href="Sweetness.html">Sweetness</a>
+                <a href="Saltiness.html">Saltiness</a>
+                <a href="Fruity.html">Fruity</a>
+                <a href="Hoppiness.html">Hoppiness</a>
+            </div>
+        </div>
+        <img src="Peers Beers (1).png" style="float:right;width:7%;height:7%;margin-right:4%;" />
+    </div>
+    <div style="width: 90%; margin-left: 2%; margin-top: 2%; background-color: rgba(0, 0, 0, 0.7); height: auto; box-shadow: 5px 5px 6px white;padding:2% ">
+        <div style="color:white;width: 90%; margin-left: 5%; margin-top: 2%; background-color: rgba(48, 37, 43, 0.72); height: auto;padding:2%; box-shadow: 5px 5px 6px white; ">
+            <table>
+                <caption>Beers</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Style</th>
+                        <th>ABV</th>
+                        <th>Rating</th>
+                        <th>Number of reviews</th>
+                        <th>Hoppy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Blind Pig</td>
+                        <td>IPA - American</td>
+                        <td>6.3</td>
+                        <td>4.36</td>
+                        <td>1141</td>
+                        <td>140.00</td>
+                    </tr>
+                    <tr>
+                        <td>West Coast IPA</td>
+                        <td>IPA - Imperial</td>
+                        <td>8.1</td>
+                        <td>4.11</td>
+                        <td>1286</td>
+                        <td>139.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Hallertau Imperial PilsnerBoston Beer Company (Samuel Adams)</td>
+                        <td>Pilsner - Imperial</td>
+                        <td>8.1</td>
+                        <td>3.84</td>
+                        <td>698</td>
+                        <td>139.00</td>
+                    </tr>
+                    <tr>
+                        <td>Nugget Nectar</td>
+                        <td>Red Ale - Imperial</td>
+                        <td>7.5</td>
+                        <td>4.40</td>
+                        <td>1955</td>
+                        <td>139.00</td>
+                    </tr>
+                    <tr>
+                        <td>St. Rogue Red</td>
+                        <td>Red Ale - American Amber / Red</td>
+                        <td>5.1</td>
+                        <td>3.87</td>
+                        <td>684</td>
+                        <td>135.00</td>
+                    </tr>
+                    <tr>
+                        <td>Ruination Double IPA 2.0</td>
+                        <td>IPA - Imperial</td>
+                        <td>8.5</td>
+                        <td>4.16</td>
+                        <td>2704</td>
+                        <td>135.00</td>
+                    </tr>
+                    <tr>
+                        <td>Houblon Chouffe Dobbelen IPA Tripel</td>
+                        <td>IPA - Belgian</td>
+                        <td>9.0</td>
+                        <td>4.18</td>
+                        <td>1015</td>
+                        <td>135.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hop In The Dark Cascadian Dark Ale</td>
+                        <td>IPA - Black / Cascadian Dark Ale</td>
+                        <td>6.9</td>
+                        <td>4.03</td>
+                        <td>404</td>
+                        <td>133.00</td>
+                    </tr>
+                    <tr>
+                        <td>Smuttynose Shoals Pale Ale</td>
+                        <td>Pale Ale - English</td>
+                        <td>5.6</td>
+                        <td>3.95</td>
+                        <td>605</td>
+                        <td>130.00</td>
+                    </tr>
+                    <tr>
+                        <td>Green Flash Imperial India Pale Ale</td>
+                        <td>IPA - Imperial</td>
+                        <td>9.0</td>
+                        <td>3.97</td>
+                        <td>812</td>
+                        <td>128.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pure Hoppiness</td>
+                        <td>IPA - Imperial</td>
+                        <td>8.0</td>
+                        <td>4.35</td>
+                        <td>561</td>
+                        <td>126.00</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh Hop Pale Ale</td>
+                        <td>Pale Ale - American</td>
+                        <td>6.1</td>
+                        <td>4.14</td>
+                        <td>598</td>
+                        <td>125.00</td>
+                    </tr>
+                    <tr>
+                        <td>Daisy Cutter Pale Ale</td>
+                        <td>Pale Ale - American</td>
+                        <td>5.2</td>
+                        <td>4.30</td>
+                        <td>482</td>
+                        <td>124.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hop Wallop</td>
+                        <td>IPA - American</td>
+                        <td>7.5</td>
+                        <td>3.99</td>
+                        <td>1818</td>
+                        <td>124.00</td>
+                    </tr>
+                    <tr>
+                        <td>Red Rocket Ale</td>
+                        <td>Red Ale - American Amber / Red</td>
+                        <td>6.8</td>
+                        <td>4.09</td>
+                        <td>1034</td>
+                        <td>122.00</td>
+                    </tr>
+                    <tr>
+                        <td>Old Ruffian</td>
+                        <td>Barleywine - American</td>
+                        <td>10.2</td>
+                        <td>4.07</td>
+                        <td>939</td>
+                        <td>120.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hercules Double IPA</td>
+                        <td>IPA - Imperial</td>
+                        <td>10.0</td>
+                        <td>4.06</td>
+                        <td>1378</td>
+                        <td>119.00</td>
+                    </tr>
+                    <tr>
+                        <td>Heady Topper</td>
+                        <td>IPA - New England</td>
+                        <td>8.0</td>
+                        <td>4.63</td>
+                        <td>469</td>
+                        <td>117.00</td>
+                    </tr>
+                    <tr>
+                        <td>Harvest Ale</td>
+                        <td>IPA - American</td>
+                        <td>7.6</td>
+                        <td>4.21</td>
+                        <td>674</td>
+                        <td>117.00</td>
+                    </tr>
+                    <tr>
+                        <td>Crooked Tree IPA</td>
+                        <td>IPA - American</td>
+                        <td>6.5</td>
+                        <td>3.98</td>
+                        <td>729</td>
+                        <td>116.00</td>
+                    </tr>
+                    <tr>
+                        <td>Northern Hemisphere Harvest Wet Hop IPA</td>
+                        <td>IPA - American</td>
+                        <td>6.7</td>
+                        <td>4.24</td>
+                        <td>1354</td>
+                        <td>115.00</td>
+                    </tr>
+                    <tr>
+                        <td>IPA</td>
+                        <td>IPA - American</td>
+                        <td>7.3</td>
+                        <td>4.30</td>
+                        <td>949</td>
+                        <td>114.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Noble PilsBoston Beer Company (Samuel Adams)</td>
+                        <td>Pilsner - German</td>
+                        <td>4.9</td>
+                        <td>4.12</td>
+                        <td>1336</td>
+                        <td>112.00</td>
+                    </tr>
+                    <tr>
+                        <td>CascaZilla</td>
+                        <td>Red Ale - American Amber / Red</td>
+                        <td>7.0</td>
+                        <td>3.95</td>
+                        <td>536</td>
+                        <td>111.00</td>
+                    </tr>
+                    <tr>
+                        <td>Alba Scots Pine Ale</td>
+                        <td>Gruit / Ancient Herbed Ale</td>
+                        <td>7.5</td>
+                        <td>3.67</td>
+                        <td>454</td>
+                        <td>110.00</td>
+                    </tr>
+                    <tr>
+                        <td>IPA</td>
+                        <td>IPA - English</td>
+                        <td>5.9</td>
+                        <td>3.83</td>
+                        <td>1141</td>
+                        <td>110.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Pale AleBoston Beer Company (Samuel Adams)</td>
+                        <td>Pale Ale - English</td>
+                        <td>5.3</td>
+                        <td>3.67</td>
+                        <td>619</td>
+                        <td>108.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hop Rod Rye</td>
+                        <td>Rye Beer</td>
+                        <td>8.0</td>
+                        <td>4.22</td>
+                        <td>1913</td>
+                        <td>107.00</td>
+                    </tr>
+                    <tr>
+                        <td>Torpedo Extra IPA</td>
+                        <td>IPA - American</td>
+                        <td>7.2</td>
+                        <td>4.10</td>
+                        <td>2029</td>
+                        <td>107.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pliny The Younger</td>
+                        <td>IPA - Imperial</td>
+                        <td>10.3</td>
+                        <td>4.60</td>
+                        <td>610</td>
+                        <td>106.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saranac American Pale Ale</td>
+                        <td>Pale Ale - American</td>
+                        <td>5.5</td>
+                        <td>3.59</td>
+                        <td>604</td>
+                        <td>105.00</td>
+                    </tr>
+                    <tr>
+                        <td>Titan IPA</td>
+                        <td>IPA - American</td>
+                        <td>7.1</td>
+                        <td>4.14</td>
+                        <td>1270</td>
+                        <td>105.00</td>
+                    </tr>
+                    <tr>
+                        <td>Behemoth</td>
+                        <td>Barleywine - American</td>
+                        <td>10.5</td>
+                        <td>4.06</td>
+                        <td>434</td>
+                        <td>105.00</td>
+                    </tr>
+                    <tr>
+                        <td>Harvest Ale</td>
+                        <td>Bitter - English Extra Special / Strong Bitter (ESB)</td>
+                        <td>6.7</td>
+                        <td>4.07</td>
+                        <td>470</td>
+                        <td>105.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hop Head Red Ale</td>
+                        <td>Red Ale - Imperial</td>
+                        <td>8.1</td>
+                        <td>4.02</td>
+                        <td>677</td>
+                        <td>105.00</td>
+                    </tr>
+                    <tr>
+                        <td>Wild Devil</td>
+                        <td>Brett Beer</td>
+                        <td>6.7</td>
+                        <td>3.77</td>
+                        <td>470</td>
+                        <td>104.00</td>
+                    </tr>
+                    <tr>
+                        <td>IPA</td>
+                        <td>IPA - American</td>
+                        <td>6.3</td>
+                        <td>4.15</td>
+                        <td>662</td>
+                        <td>103.00</td>
+                    </tr>
+                    <tr>
+                        <td>Abrasive Ale</td>
+                        <td>IPA - Imperial</td>
+                        <td>9.2</td>
+                        <td>4.43</td>
+                        <td>563</td>
+                        <td>103.00</td>
+                    </tr>
+                    <tr>
+                        <td>Yakima Glory</td>
+                        <td>IPA - Black / Cascadian Dark Ale</td>
+                        <td>8.7</td>
+                        <td>3.88</td>
+                        <td>675</td>
+                        <td>103.00</td>
+                    </tr>
+                    <tr>
+                        <td>Dead Reckoning Porter</td>
+                        <td>Porter - American</td>
+                        <td>5.8</td>
+                        <td>3.94</td>
+                        <td>502</td>
+                        <td>102.00</td>
+                    </tr>
+                    <tr>
+                        <td>Imperial Stout</td>
+                        <td>Stout - Russian Imperial</td>
+                        <td>11.0</td>
+                        <td>3.88</td>
+                        <td>833</td>
+                        <td>102.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hoptimum</td>
+                        <td>IPA - Imperial</td>
+                        <td>10.6</td>
+                        <td>3.85</td>
+                        <td>556</td>
+                        <td>101.00</td>
+                    </tr>
+                    <tr>
+                        <td>Green Flash Le Freak</td>
+                        <td>IPA - Belgian</td>
+                        <td>9.2</td>
+                        <td>3.92</td>
+                        <td>506</td>
+                        <td>101.00</td>
+                    </tr>
+                    <tr>
+                        <td>Fuller's London Pride</td>
+                        <td>Bitter - English</td>
+                        <td>4.7</td>
+                        <td>4.15</td>
+                        <td>956</td>
+                        <td>101.00</td>
+                    </tr>
+                    <tr>
+                        <td>A Little Sumpin' Sumpin' Ale</td>
+                        <td>IPA - American</td>
+                        <td>7.5</td>
+                        <td>4.22</td>
+                        <td>850</td>
+                        <td>100.00</td>
+                    </tr>
+                    <tr>
+                        <td>Unearthly (Imperial India Pale Ale)</td>
+                        <td>IPA - Imperial</td>
+                        <td>9.5</td>
+                        <td>4.02</td>
+                        <td>1038</td>
+                        <td>100.00</td>
+                    </tr>
+                    <tr>
+                        <td>Lake Erie Monster</td>
+                        <td>IPA - Imperial</td>
+                        <td>9.5</td>
+                        <td>3.92</td>
+                        <td>486</td>
+                        <td>100.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hop Ottin' IPA</td>
+                        <td>IPA - American</td>
+                        <td>7.0</td>
+                        <td>4.01</td>
+                        <td>1045</td>
+                        <td>99.00</td>
+                    </tr>
+                    <tr>
+                        <td>Lucky 13 Mondo Large Red Ale</td>
+                        <td>Red Ale - Imperial</td>
+                        <td>8.8</td>
+                        <td>4.07</td>
+                        <td>705</td>
+                        <td>99.00</td>
+                    </tr>
+                    <tr>
+                        <td>PILS (Czech Style Pilsner)</td>
+                        <td>Pilsner - Bohemian / Czech</td>
+                        <td>6.2</td>
+                        <td>3.79</td>
+                        <td>532</td>
+                        <td>98.00</td>
+                    </tr>
+                    <tr>
+                        <td>Fraoch Heather Ale</td>
+                        <td>Gruit / Ancient Herbed Ale</td>
+                        <td>5.0</td>
+                        <td>3.79</td>
+                        <td>669</td>
+                        <td>98.00</td>
+                    </tr>
+                    <tr>
+                        <td>Devil Dancer</td>
+                        <td>IPA - Imperial</td>
+                        <td>12.0</td>
+                        <td>3.73</td>
+                        <td>1066</td>
+                        <td>98.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hop Stoopid</td>
+                        <td>IPA - Imperial</td>
+                        <td>8.0</td>
+                        <td>4.16</td>
+                        <td>1540</td>
+                        <td>98.00</td>
+                    </tr>
+                    <tr>
+                        <td>Old Horizontal</td>
+                        <td>Barleywine - American</td>
+                        <td>11.0</td>
+                        <td>3.96</td>
+                        <td>1069</td>
+                        <td>97.00</td>
+                    </tr>
+                    <tr>
+                        <td>New World Porter</td>
+                        <td>Porter - American</td>
+                        <td>6.7</td>
+                        <td>3.92</td>
+                        <td>429</td>
+                        <td>97.00</td>
+                    </tr>
+                    <tr>
+                        <td>Furious</td>
+                        <td>IPA - American</td>
+                        <td>6.7</td>
+                        <td>4.34</td>
+                        <td>1224</td>
+                        <td>96.00</td>
+                    </tr>
+                    <tr>
+                        <td>Wilco Tango Foxtrot</td>
+                        <td>Brown Ale - American</td>
+                        <td>7.8</td>
+                        <td>3.93</td>
+                        <td>596</td>
+                        <td>95.00</td>
+                    </tr>
+                    <tr>
+                        <td>Blind Faith</td>
+                        <td>IPA - English</td>
+                        <td>6.2</td>
+                        <td>3.85</td>
+                        <td>433</td>
+                        <td>95.00</td>
+                    </tr>
+                    <tr>
+                        <td>India Pale Ale (IPA)</td>
+                        <td>IPA - American</td>
+                        <td>6.5</td>
+                        <td>3.94</td>
+                        <td>1067</td>
+                        <td>94.00</td>
+                    </tr>
+                    <tr>
+                        <td>Alpha Klaus Christmas (Xmas) Porter</td>
+                        <td>Porter - American</td>
+                        <td>6.0</td>
+                        <td>4.18</td>
+                        <td>645</td>
+                        <td>94.00</td>
+                    </tr>
+                    <tr>
+                        <td>Extra Pale Ale</td>
+                        <td>Pale Ale - English</td>
+                        <td>5.3</td>
+                        <td>3.92</td>
+                        <td>412</td>
+                        <td>94.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hopback Amber Ale</td>
+                        <td>Red Ale - American Amber / Red</td>
+                        <td>6.0</td>
+                        <td>4.18</td>
+                        <td>1052</td>
+                        <td>94.00</td>
+                    </tr>
+                    <tr>
+                        <td>Smuttynose IPA "Finest Kind"</td>
+                        <td>IPA - American</td>
+                        <td>6.9</td>
+                        <td>4.13</td>
+                        <td>1497</td>
+                        <td>93.00</td>
+                    </tr>
+                    <tr>
+                        <td>Gubna</td>
+                        <td>IPA - Imperial</td>
+                        <td>10.0</td>
+                        <td>3.52</td>
+                        <td>693</td>
+                        <td>93.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hop Henge</td>
+                        <td>IPA - Imperial</td>
+                        <td>8.3</td>
+                        <td>4.05</td>
+                        <td>572</td>
+                        <td>92.00</td>
+                    </tr>
+                    <tr>
+                        <td>East India Pale Ale</td>
+                        <td>IPA - English</td>
+                        <td>6.9</td>
+                        <td>3.72</td>
+                        <td>866</td>
+                        <td>92.00</td>
+                    </tr>
+                    <tr>
+                        <td>Celebration Fresh Hop IPA</td>
+                        <td>IPA - American</td>
+                        <td>6.8</td>
+                        <td>4.17</td>
+                        <td>3000</td>
+                        <td>92.00</td>
+                    </tr>
+                    <tr>
+                        <td>Back In Black</td>
+                        <td>IPA - Black / Cascadian Dark Ale</td>
+                        <td>6.8</td>
+                        <td>3.70</td>
+                        <td>511</td>
+                        <td>92.00</td>
+                    </tr>
+                    <tr>
+                        <td>Double Trouble</td>
+                        <td>IPA - Imperial</td>
+                        <td>9.4</td>
+                        <td>4.10</td>
+                        <td>1164</td>
+                        <td>91.00</td>
+                    </tr>
+                    <tr>
+                        <td>Denver Pale Ale</td>
+                        <td>Pale Ale - English</td>
+                        <td>5.4</td>
+                        <td>3.87</td>
+                        <td>531</td>
+                        <td>91.00</td>
+                    </tr>
+                    <tr>
+                        <td>Doggie Style</td>
+                        <td>Pale Ale - American</td>
+                        <td>5.5</td>
+                        <td>3.74</td>
+                        <td>953</td>
+                        <td>90.00</td>
+                    </tr>
+                    <tr>
+                        <td>2XIPA</td>
+                        <td>IPA - Imperial</td>
+                        <td>8.2</td>
+                        <td>4.08</td>
+                        <td>712</td>
+                        <td>89.00</td>
+                    </tr>
+                    <tr>
+                        <td>HopDevil</td>
+                        <td>IPA - American</td>
+                        <td>6.7</td>
+                        <td>4.11</td>
+                        <td>2302</td>
+                        <td>89.00</td>
+                    </tr>
+                    <tr>
+                        <td>Maximus</td>
+                        <td>IPA - Imperial</td>
+                        <td>8.2</td>
+                        <td>3.91</td>
+                        <td>1136</td>
+                        <td>88.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mirror Pond Pale Ale</td>
+                        <td>Pale Ale - American</td>
+                        <td>5.0</td>
+                        <td>4.10</td>
+                        <td>687</td>
+                        <td>88.00</td>
+                    </tr>
+                    <tr>
+                        <td>Black Sun Stout</td>
+                        <td>Stout - Irish Dry</td>
+                        <td>6.5</td>
+                        <td>4.13</td>
+                        <td>421</td>
+                        <td>88.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pride &amp; Joy Mild Ale</td>
+                        <td>Pale Ale - American</td>
+                        <td>5.0</td>
+                        <td>4.19</td>
+                        <td>615</td>
+                        <td>87.00</td>
+                    </tr>
+                    <tr>
+                        <td>Phin &amp; Matt's Extraordinary Ale</td>
+                        <td>Pale Ale - American</td>
+                        <td>5.2</td>
+                        <td>3.77</td>
+                        <td>563</td>
+                        <td>87.00</td>
+                    </tr>
+                    <tr>
+                        <td>Brutal</td>
+                        <td>IPA - English</td>
+                        <td>6.2</td>
+                        <td>4.10</td>
+                        <td>1039</td>
+                        <td>86.00</td>
+                    </tr>
+                    <tr>
+                        <td>India AleSamuel Smith Old Brewery (Tadcaster)</td>
+                        <td>IPA - English</td>
+                        <td>5.0</td>
+                        <td>3.87</td>
+                        <td>786</td>
+                        <td>86.00</td>
+                    </tr>
+                    <tr>
+                        <td>Lager</td>
+                        <td>Lager - American Amber / Red</td>
+                        <td>5.2</td>
+                        <td>4.02</td>
+                        <td>1101</td>
+                        <td>86.00</td>
+                    </tr>
+                    <tr>
+                        <td>XS Old Crustacean</td>
+                        <td>Barleywine - American</td>
+                        <td>11.5</td>
+                        <td>3.74</td>
+                        <td>703</td>
+                        <td>86.00</td>
+                    </tr>
+                    <tr>
+                        <td>Nosferatu</td>
+                        <td>Red Ale - Imperial</td>
+                        <td>8.0</td>
+                        <td>4.04</td>
+                        <td>757</td>
+                        <td>86.00</td>
+                    </tr>
+                    <tr>
+                        <td>Gonzo</td>
+                        <td>Porter - Imperial</td>
+                        <td>10.0</td>
+                        <td>3.94</td>
+                        <td>1366</td>
+                        <td>86.00</td>
+                    </tr>
+                    <tr>
+                        <td>Urthel Hop-ItDe Leyerth Brouwerijen (Urthel)</td>
+                        <td>IPA - Belgian</td>
+                        <td>9.5</td>
+                        <td>3.92</td>
+                        <td>501</td>
+                        <td>85.00</td>
+                    </tr>
+                    <tr>
+                        <td>Anchor Liberty Ale</td>
+                        <td>IPA - American</td>
+                        <td>5.9</td>
+                        <td>4.10</td>
+                        <td>1417</td>
+                        <td>85.00</td>
+                    </tr>
+                    <tr>
+                        <td>Centennial IPA</td>
+                        <td>IPA - American</td>
+                        <td>7.2</td>
+                        <td>4.15</td>
+                        <td>1395</td>
+                        <td>85.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pliny The Elder</td>
+                        <td>IPA - Imperial</td>
+                        <td>8.0</td>
+                        <td>4.59</td>
+                        <td>2527</td>
+                        <td>85.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hopsecutioner</td>
+                        <td>IPA - American</td>
+                        <td>7.3</td>
+                        <td>3.90</td>
+                        <td>538</td>
+                        <td>84.00</td>
+                    </tr>
+                    <tr>
+                        <td>Storm King Stout</td>
+                        <td>Stout - American Imperial</td>
+                        <td>9.1</td>
+                        <td>4.09</td>
+                        <td>2452</td>
+                        <td>84.00</td>
+                    </tr>
+                    <tr>
+                        <td>Maharaja</td>
+                        <td>IPA - Imperial</td>
+                        <td>10.2</td>
+                        <td>4.04</td>
+                        <td>1545</td>
+                        <td>83.00</td>
+                    </tr>
+                    <tr>
+                        <td>Commodore Perry</td>
+                        <td>IPA - English</td>
+                        <td>7.7</td>
+                        <td>3.97</td>
+                        <td>692</td>
+                        <td>82.00</td>
+                    </tr>
+                    <tr>
+                        <td>Doggie Claws</td>
+                        <td>Barleywine - American</td>
+                        <td>11.5</td>
+                        <td>4.02</td>
+                        <td>459</td>
+                        <td>82.00</td>
+                    </tr>
+                    <tr>
+                        <td>Santa's Private Reserve Ale</td>
+                        <td>Red Ale - American Amber / Red</td>
+                        <td>5.3</td>
+                        <td>3.81</td>
+                        <td>1117</td>
+                        <td>82.00</td>
+                    </tr>
+                    <tr>
+                        <td>Prima Pils</td>
+                        <td>Pilsner - German</td>
+                        <td>5.3</td>
+                        <td>4.24</td>
+                        <td>1863</td>
+                        <td>82.00</td>
+                    </tr>
+                    <tr>
+                        <td>Premium Pils (Premium Beer)</td>
+                        <td>Pilsner - German</td>
+                        <td>4.8</td>
+                        <td>3.74</td>
+                        <td>693</td>
+                        <td>81.00</td>
+                    </tr>
+                    <tr>
+                        <td>G'Knight</td>
+                        <td>Red Ale - Imperial</td>
+                        <td>8.7</td>
+                        <td>4.09</td>
+                        <td>1123</td>
+                        <td>80.00</td>
+                    </tr>
+                    <tr>
+                        <td>Raging Bitch</td>
+                        <td>IPA - Belgian</td>
+                        <td>8.3</td>
+                        <td>3.97</td>
+                        <td>885</td>
+                        <td>80.00</td>
+                    </tr>
+                    <tr>
+                        <td>Juniper Pale Ale</td>
+                        <td>Herb and Spice Beer</td>
+                        <td>5.3</td>
+                        <td>3.78</td>
+                        <td>639</td>
+                        <td>80.00</td>
+                    </tr>
+                    <tr>
+                        <td>ApriHop</td>
+                        <td>IPA - American</td>
+                        <td>7.0</td>
+                        <td>3.83</td>
+                        <td>1482</td>
+                        <td>80.00</td>
+                    </tr>
+                    <tr>
+                        <td>Nelson</td>
+                        <td>IPA - American</td>
+                        <td>7.0</td>
+                        <td>4.37</td>
+                        <td>418</td>
+                        <td>78.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sawtooth</td>
+                        <td>Bitter - English Extra Special / Strong Bitter (ESB)</td>
+                        <td>5.3</td>
+                        <td>3.83</td>
+                        <td>586</td>
+                        <td>78.00</td>
+                    </tr>
+                    <tr>
+                        <td>Double Jack</td>
+                        <td>IPA - Imperial</td>
+                        <td>9.5</td>
+                        <td>4.19</td>
+                        <td>698</td>
+                        <td>78.00</td>
+                    </tr>
+                    <tr>
+                        <td>Arctic Panzer Wolf</td>
+                        <td>IPA - Imperial</td>
+                        <td>9.0</td>
+                        <td>4.11</td>
+                        <td>475</td>
+                        <td>78.00</td>
+                    </tr>
+                    <tr>
+                        <td>Old Speckled Hen</td>
+                        <td>Pale Ale - English</td>
+                        <td>5.0</td>
+                        <td>3.60</td>
+                        <td>874</td>
+                        <td>78.00</td>
+                    </tr>
+                    <tr>
+                        <td>Alpha King</td>
+                        <td>Pale Ale - American</td>
+                        <td>6.7</td>
+                        <td>4.33</td>
+                        <td>1531</td>
+                        <td>78.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sunshine Pils</td>
+                        <td>Pilsner - German</td>
+                        <td>4.5</td>
+                        <td>4.06</td>
+                        <td>533</td>
+                        <td>78.00</td>
+                    </tr>
+                    <tr>
+                        <td>Snow Cap</td>
+                        <td>Winter Warmer</td>
+                        <td>7.0</td>
+                        <td>3.54</td>
+                        <td>492</td>
+                        <td>78.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mama's Little Yella Pils</td>
+                        <td>Pilsner - Bohemian / Czech</td>
+                        <td>4.7</td>
+                        <td>3.87</td>
+                        <td>543</td>
+                        <td>76.00</td>
+                    </tr>
+                    <tr>
+                        <td>Red Seal Ale</td>
+                        <td>Red Ale - American Amber / Red</td>
+                        <td>5.4</td>
+                        <td>4.04</td>
+                        <td>957</td>
+                        <td>75.00</td>
+                    </tr>
+                    <tr>
+                        <td>Red Tail Ale</td>
+                        <td>Red Ale - American Amber / Red</td>
+                        <td>6.1</td>
+                        <td>3.56</td>
+                        <td>450</td>
+                        <td>75.00</td>
+                    </tr>
+                    <tr>
+                        <td>Flower Power India Pale Ale</td>
+                        <td>IPA - American</td>
+                        <td>7.2</td>
+                        <td>4.15</td>
+                        <td>832</td>
+                        <td>75.00</td>
+                    </tr>
+                    <tr>
+                        <td>60 Minute IPA</td>
+                        <td>IPA - American</td>
+                        <td>6.0</td>
+                        <td>4.17</td>
+                        <td>2475</td>
+                        <td>75.00</td>
+                    </tr>
+                    <tr>
+                        <td>Gaelic Ale</td>
+                        <td>Red Ale - American Amber / Red</td>
+                        <td>5.8</td>
+                        <td>3.96</td>
+                        <td>437</td>
+                        <td>74.00</td>
+                    </tr>
+                    <tr>
+                        <td>Darkness</td>
+                        <td>Stout - Russian Imperial</td>
+                        <td>12.0</td>
+                        <td>4.30</td>
+                        <td>646</td>
+                        <td>74.00</td>
+                    </tr>
+                    <tr>
+                        <td>Old Man Winter</td>
+                        <td>Winter Warmer</td>
+                        <td>7.5</td>
+                        <td>3.80</td>
+                        <td>464</td>
+                        <td>73.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Latitude 48 IPABoston Beer Company (Samuel Adams)</td>
+                        <td>IPA - American</td>
+                        <td>6.0</td>
+                        <td>3.81</td>
+                        <td>812</td>
+                        <td>73.00</td>
+                    </tr>
+                    <tr>
+                        <td>Snake Dog</td>
+                        <td>IPA - American</td>
+                        <td>7.1</td>
+                        <td>3.62</td>
+                        <td>1060</td>
+                        <td>73.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saison-Brett</td>
+                        <td>Farmhouse Ale - Saison</td>
+                        <td>8.5</td>
+                        <td>4.31</td>
+                        <td>453</td>
+                        <td>72.00</td>
+                    </tr>
+                    <tr>
+                        <td>Flying Mouflan</td>
+                        <td>Barleywine - American</td>
+                        <td>9.3</td>
+                        <td>4.08</td>
+                        <td>460</td>
+                        <td>72.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hop Sun (Summer Wheat Beer)</td>
+                        <td>Wheat Beer - American Pale</td>
+                        <td>5.1</td>
+                        <td>4.13</td>
+                        <td>473</td>
+                        <td>72.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pilsner</td>
+                        <td>Pilsner - German</td>
+                        <td>5.1</td>
+                        <td>3.90</td>
+                        <td>408</td>
+                        <td>72.00</td>
+                    </tr>
+                    <tr>
+                        <td>Indian Brown Ale</td>
+                        <td>Brown Ale - American</td>
+                        <td>7.2</td>
+                        <td>4.03</td>
+                        <td>1719</td>
+                        <td>71.00</td>
+                    </tr>
+                    <tr>
+                        <td>A Little Sumpin' Wild</td>
+                        <td>IPA - Belgian</td>
+                        <td>8.8</td>
+                        <td>4.08</td>
+                        <td>677</td>
+                        <td>71.00</td>
+                    </tr>
+                    <tr>
+                        <td>Dortmunder Gold</td>
+                        <td>Lager - European / Dortmunder Export</td>
+                        <td>5.8</td>
+                        <td>4.30</td>
+                        <td>896</td>
+                        <td>71.00</td>
+                    </tr>
+                    <tr>
+                        <td>Undercover Investigation Shut-down Ale</td>
+                        <td>Strong Ale - American</td>
+                        <td>9.6</td>
+                        <td>3.91</td>
+                        <td>457</td>
+                        <td>70.00</td>
+                    </tr>
+                    <tr>
+                        <td>Winter Welcome AleSamuel Smith Old Brewery (Tadcaster)</td>
+                        <td>Winter Warmer</td>
+                        <td>6.0</td>
+                        <td>3.75</td>
+                        <td>1017</td>
+                        <td>69.00</td>
+                    </tr>
+                    <tr>
+                        <td>420 Extra Pale Ale</td>
+                        <td>Pale Ale - American</td>
+                        <td>5.4</td>
+                        <td>3.86</td>
+                        <td>531</td>
+                        <td>69.00</td>
+                    </tr>
+                    <tr>
+                        <td>Fire Rock Pale Ale</td>
+                        <td>Pale Ale - American</td>
+                        <td>5.8</td>
+                        <td>3.77</td>
+                        <td>521</td>
+                        <td>69.00</td>
+                    </tr>
+                    <tr>
+                        <td>Dogtoberfest</td>
+                        <td>Lager - Märzen / Oktoberfest</td>
+                        <td>5.6</td>
+                        <td>3.64</td>
+                        <td>496</td>
+                        <td>69.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sah'tea</td>
+                        <td>Farmhouse Ale - Sahti</td>
+                        <td>9.0</td>
+                        <td>3.88</td>
+                        <td>484</td>
+                        <td>68.00</td>
+                    </tr>
+                    <tr>
+                        <td>Olde GnarlyWine</td>
+                        <td>Barleywine - American</td>
+                        <td>10.9</td>
+                        <td>4.02</td>
+                        <td>611</td>
+                        <td>68.00</td>
+                    </tr>
+                    <tr>
+                        <td>Obsidian Stout</td>
+                        <td>Stout - American</td>
+                        <td>6.4</td>
+                        <td>4.25</td>
+                        <td>776</td>
+                        <td>67.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Boston Ale (Stock Ale)Boston Beer Company (Samuel Adams)</td>
+                        <td>Pale Ale - English</td>
+                        <td>5.4</td>
+                        <td>3.88</td>
+                        <td>1013</td>
+                        <td>66.00</td>
+                    </tr>
+                    <tr>
+                        <td>Grolsch Premium Lager</td>
+                        <td>Lager - European Pale</td>
+                        <td>5.0</td>
+                        <td>3.30</td>
+                        <td>632</td>
+                        <td>66.00</td>
+                    </tr>
+                    <tr>
+                        <td>Original Helles</td>
+                        <td>Lager - Helles</td>
+                        <td>5.1</td>
+                        <td>4.20</td>
+                        <td>669</td>
+                        <td>65.00</td>
+                    </tr>
+                    <tr>
+                        <td>Double Crooked Tree IPA</td>
+                        <td>IPA - Imperial</td>
+                        <td>12.0</td>
+                        <td>4.02</td>
+                        <td>679</td>
+                        <td>65.00</td>
+                    </tr>
+                    <tr>
+                        <td>Amstel Light</td>
+                        <td>Lager - Light</td>
+                        <td>3.5</td>
+                        <td>2.72</td>
+                        <td>465</td>
+                        <td>65.00</td>
+                    </tr>
+                    <tr>
+                        <td>Out Of Bounds Stout</td>
+                        <td>Stout - American</td>
+                        <td>6.3</td>
+                        <td>3.80</td>
+                        <td>492</td>
+                        <td>65.00</td>
+                    </tr>
+                    <tr>
+                        <td>Traquair Jacobite</td>
+                        <td>Scotch Ale / Wee Heavy</td>
+                        <td>8.0</td>
+                        <td>4.07</td>
+                        <td>462</td>
+                        <td>65.00</td>
+                    </tr>
+                    <tr>
+                        <td>Spaten Münchner Hell (München/Premium Lager)</td>
+                        <td>Lager - Helles</td>
+                        <td>5.2</td>
+                        <td>3.93</td>
+                        <td>542</td>
+                        <td>64.00</td>
+                    </tr>
+                    <tr>
+                        <td>Old Foghorn</td>
+                        <td>Barleywine - English</td>
+                        <td>10.0</td>
+                        <td>3.85</td>
+                        <td>934</td>
+                        <td>64.00</td>
+                    </tr>
+                    <tr>
+                        <td>Coffee Bender</td>
+                        <td>Brown Ale - American</td>
+                        <td>5.5</td>
+                        <td>4.19</td>
+                        <td>627</td>
+                        <td>64.00</td>
+                    </tr>
+                    <tr>
+                        <td>120 Minute IPA</td>
+                        <td>IPA - Imperial</td>
+                        <td>18.0</td>
+                        <td>3.55</td>
+                        <td>1745</td>
+                        <td>63.00</td>
+                    </tr>
+                    <tr>
+                        <td>Smuttynose Imperial Stout (Big Beer Series)</td>
+                        <td>Stout - Russian Imperial</td>
+                        <td>10.5</td>
+                        <td>3.97</td>
+                        <td>635</td>
+                        <td>63.00</td>
+                    </tr>
+                    <tr>
+                        <td>Stout</td>
+                        <td>Stout - American</td>
+                        <td>5.8</td>
+                        <td>4.14</td>
+                        <td>1230</td>
+                        <td>62.00</td>
+                    </tr>
+                    <tr>
+                        <td>My Antonia</td>
+                        <td>Pilsner - Imperial</td>
+                        <td>7.5</td>
+                        <td>4.10</td>
+                        <td>426</td>
+                        <td>62.00</td>
+                    </tr>
+                    <tr>
+                        <td>Smoked Porter</td>
+                        <td>Porter - Smoked</td>
+                        <td>5.9</td>
+                        <td>4.07</td>
+                        <td>1643</td>
+                        <td>62.00</td>
+                    </tr>
+                    <tr>
+                        <td>Lagunitas Sucks</td>
+                        <td>IPA - Imperial</td>
+                        <td>7.8</td>
+                        <td>4.26</td>
+                        <td>442</td>
+                        <td>62.00</td>
+                    </tr>
+                    <tr>
+                        <td>Oktoberfest Märzen</td>
+                        <td>Lager - Märzen / Oktoberfest</td>
+                        <td>5.8</td>
+                        <td>4.04</td>
+                        <td>1012</td>
+                        <td>61.00</td>
+                    </tr>
+                    <tr>
+                        <td>Monty Python's Holy Grail Ale</td>
+                        <td>Pale Ale - English</td>
+                        <td>4.7</td>
+                        <td>3.52</td>
+                        <td>588</td>
+                        <td>61.00</td>
+                    </tr>
+                    <tr>
+                        <td>American Amber Ale</td>
+                        <td>Red Ale - American Amber / Red</td>
+                        <td>5.3</td>
+                        <td>3.98</td>
+                        <td>723</td>
+                        <td>60.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cane And Ebel</td>
+                        <td>Rye Beer</td>
+                        <td>7.0</td>
+                        <td>4.09</td>
+                        <td>558</td>
+                        <td>59.00</td>
+                    </tr>
+                    <tr>
+                        <td>Anchor Porter</td>
+                        <td>Porter - American</td>
+                        <td>5.6</td>
+                        <td>4.14</td>
+                        <td>1330</td>
+                        <td>59.00</td>
+                    </tr>
+                    <tr>
+                        <td>Brown Shugga'</td>
+                        <td>Strong Ale - American</td>
+                        <td>10.0</td>
+                        <td>3.86</td>
+                        <td>1018</td>
+                        <td>59.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tripel (White)</td>
+                        <td>Tripel</td>
+                        <td>8.0</td>
+                        <td>4.05</td>
+                        <td>1446</td>
+                        <td>59.00</td>
+                    </tr>
+                    <tr>
+                        <td>Dreadnaught IPA</td>
+                        <td>IPA - Imperial</td>
+                        <td>9.5</td>
+                        <td>4.33</td>
+                        <td>1481</td>
+                        <td>59.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hobgoblin Ruby</td>
+                        <td>Bitter - English Extra Special / Strong Bitter (ESB)</td>
+                        <td>5.2</td>
+                        <td>3.77</td>
+                        <td>971</td>
+                        <td>59.00</td>
+                    </tr>
+                    <tr>
+                        <td>Brew Free Or Die IPA</td>
+                        <td>IPA - American</td>
+                        <td>7.0</td>
+                        <td>3.89</td>
+                        <td>650</td>
+                        <td>59.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tank 7</td>
+                        <td>Farmhouse Ale - Saison</td>
+                        <td>8.5</td>
+                        <td>4.12</td>
+                        <td>415</td>
+                        <td>58.00</td>
+                    </tr>
+                    <tr>
+                        <td>Honker's Ale</td>
+                        <td>Bitter - English</td>
+                        <td>4.3</td>
+                        <td>4.00</td>
+                        <td>870</td>
+                        <td>58.00</td>
+                    </tr>
+                    <tr>
+                        <td>Old Brown Dog</td>
+                        <td>Brown Ale - American</td>
+                        <td>6.7</td>
+                        <td>4.00</td>
+                        <td>824</td>
+                        <td>58.00</td>
+                    </tr>
+                    <tr>
+                        <td>Anchor Steam Beer</td>
+                        <td>California Common / Steam Beer</td>
+                        <td>4.9</td>
+                        <td>4.06</td>
+                        <td>1752</td>
+                        <td>58.00</td>
+                    </tr>
+                    <tr>
+                        <td>Reissdorf Kölsch</td>
+                        <td>Kölsch</td>
+                        <td>4.8</td>
+                        <td>4.10</td>
+                        <td>514</td>
+                        <td>58.00</td>
+                    </tr>
+                    <tr>
+                        <td>Dale's Pale Ale</td>
+                        <td>Pale Ale - American</td>
+                        <td>6.5</td>
+                        <td>4.08</td>
+                        <td>1444</td>
+                        <td>58.00</td>
+                    </tr>
+                    <tr>
+                        <td>Fuller's 1845</td>
+                        <td>Strong Ale - English</td>
+                        <td>6.3</td>
+                        <td>4.09</td>
+                        <td>646</td>
+                        <td>58.00</td>
+                    </tr>
+                    <tr>
+                        <td>Gumballhead</td>
+                        <td>Wheat Beer - American Pale</td>
+                        <td>5.6</td>
+                        <td>4.40</td>
+                        <td>1234</td>
+                        <td>58.00</td>
+                    </tr>
+                    <tr>
+                        <td>Double Dead Guy Ale</td>
+                        <td>Strong Ale - American</td>
+                        <td>9.0</td>
+                        <td>3.82</td>
+                        <td>491</td>
+                        <td>58.00</td>
+                    </tr>
+                    <tr>
+                        <td>Smithwick's Imported Premium Irish Ale</td>
+                        <td>Red Ale - Irish</td>
+                        <td>4.5</td>
+                        <td>3.75</td>
+                        <td>703</td>
+                        <td>58.00</td>
+                    </tr>
+                    <tr>
+                        <td>Porter</td>
+                        <td>Porter - Robust</td>
+                        <td>6.5</td>
+                        <td>4.22</td>
+                        <td>900</td>
+                        <td>57.00</td>
+                    </tr>
+                    <tr>
+                        <td>La Chouffe (Blonde)</td>
+                        <td>Strong Ale - Belgian Pale</td>
+                        <td>8.0</td>
+                        <td>4.14</td>
+                        <td>765</td>
+                        <td>57.00</td>
+                    </tr>
+                    <tr>
+                        <td>Festbier</td>
+                        <td>Lager - Märzen / Oktoberfest</td>
+                        <td>5.8</td>
+                        <td>3.89</td>
+                        <td>411</td>
+                        <td>57.00</td>
+                    </tr>
+                    <tr>
+                        <td>Dos Equis Ambar</td>
+                        <td>Lager - Vienna</td>
+                        <td>4.7</td>
+                        <td>3.35</td>
+                        <td>682</td>
+                        <td>57.00</td>
+                    </tr>
+                    <tr>
+                        <td>Burton Baton</td>
+                        <td>IPA - Imperial</td>
+                        <td>10.0</td>
+                        <td>4.02</td>
+                        <td>1434</td>
+                        <td>57.00</td>
+                    </tr>
+                    <tr>
+                        <td>Fat Squirrel Ale</td>
+                        <td>Brown Ale - English</td>
+                        <td>5.8</td>
+                        <td>3.99</td>
+                        <td>457</td>
+                        <td>57.00</td>
+                    </tr>
+                    <tr>
+                        <td>Fuller's ESB</td>
+                        <td>Bitter - English Extra Special / Strong Bitter (ESB)</td>
+                        <td>5.9</td>
+                        <td>4.19</td>
+                        <td>1234</td>
+                        <td>57.00</td>
+                    </tr>
+                    <tr>
+                        <td>Amber</td>
+                        <td>Altbier</td>
+                        <td>5.3</td>
+                        <td>3.85</td>
+                        <td>497</td>
+                        <td>57.00</td>
+                    </tr>
+                    <tr>
+                        <td>90 Minute IPA</td>
+                        <td>IPA - Imperial</td>
+                        <td>9.0</td>
+                        <td>4.15</td>
+                        <td>3290</td>
+                        <td>56.00</td>
+                    </tr>
+                    <tr>
+                        <td>Orval Trappist Ale</td>
+                        <td>Pale Ale - Belgian</td>
+                        <td>6.9</td>
+                        <td>4.10</td>
+                        <td>1919</td>
+                        <td>56.00</td>
+                    </tr>
+                    <tr>
+                        <td>Anchor Summer Beer</td>
+                        <td>Wheat Beer - American Pale</td>
+                        <td>4.6</td>
+                        <td>3.60</td>
+                        <td>525</td>
+                        <td>56.00</td>
+                    </tr>
+                    <tr>
+                        <td>Widmer Hefeweizen</td>
+                        <td>Wheat Beer - Hefeweizen</td>
+                        <td>4.9</td>
+                        <td>3.40</td>
+                        <td>753</td>
+                        <td>56.00</td>
+                    </tr>
+                    <tr>
+                        <td>Censored</td>
+                        <td>Red Ale - American Amber / Red</td>
+                        <td>6.8</td>
+                        <td>3.91</td>
+                        <td>708</td>
+                        <td>56.00</td>
+                    </tr>
+                    <tr>
+                        <td>Rabid Duck</td>
+                        <td>Stout - Russian Imperial</td>
+                        <td>10.0</td>
+                        <td>3.88</td>
+                        <td>442</td>
+                        <td>55.00</td>
+                    </tr>
+                    <tr>
+                        <td>Kronenbourg 1664</td>
+                        <td>Lager - European Pale</td>
+                        <td>5.5</td>
+                        <td>3.36</td>
+                        <td>427</td>
+                        <td>55.00</td>
+                    </tr>
+                    <tr>
+                        <td>Dead Guy Ale</td>
+                        <td>Bock - Maibock</td>
+                        <td>6.8</td>
+                        <td>4.04</td>
+                        <td>2234</td>
+                        <td>55.00</td>
+                    </tr>
+                    <tr>
+                        <td>Summertime</td>
+                        <td>Kölsch</td>
+                        <td>5.0</td>
+                        <td>3.86</td>
+                        <td>417</td>
+                        <td>54.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Boston LagerBoston Beer Company (Samuel Adams)</td>
+                        <td>Lager - Vienna</td>
+                        <td>5.0</td>
+                        <td>4.04</td>
+                        <td>2418</td>
+                        <td>54.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bass Pale Ale</td>
+                        <td>Pale Ale - English</td>
+                        <td>5.1</td>
+                        <td>3.69</td>
+                        <td>1096</td>
+                        <td>53.00</td>
+                    </tr>
+                    <tr>
+                        <td>Reserve Special Black Ale</td>
+                        <td>IPA - Black / Cascadian Dark Ale</td>
+                        <td>7.5</td>
+                        <td>3.93</td>
+                        <td>499</td>
+                        <td>53.00</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate Stout</td>
+                        <td>Stout - American</td>
+                        <td>5.8</td>
+                        <td>4.12</td>
+                        <td>1810</td>
+                        <td>53.00</td>
+                    </tr>
+                    <tr>
+                        <td>Red's Rye IPA</td>
+                        <td>Rye Beer</td>
+                        <td>6.6</td>
+                        <td>4.21</td>
+                        <td>1405</td>
+                        <td>52.00</td>
+                    </tr>
+                    <tr>
+                        <td>Rugged Trail Nut Brown Ale</td>
+                        <td>Brown Ale - English</td>
+                        <td>5.0</td>
+                        <td>3.90</td>
+                        <td>456</td>
+                        <td>52.00</td>
+                    </tr>
+                    <tr>
+                        <td>Jai Alai IPA</td>
+                        <td>IPA - American</td>
+                        <td>7.5</td>
+                        <td>4.12</td>
+                        <td>649</td>
+                        <td>51.00</td>
+                    </tr>
+                    <tr>
+                        <td>Damnation</td>
+                        <td>Strong Ale - Belgian Pale</td>
+                        <td>7.5</td>
+                        <td>4.16</td>
+                        <td>910</td>
+                        <td>51.00</td>
+                    </tr>
+                    <tr>
+                        <td>Guinness Foreign Extra Stout</td>
+                        <td>Stout - Foreign / Export</td>
+                        <td>7.5</td>
+                        <td>4.06</td>
+                        <td>682</td>
+                        <td>50.00</td>
+                    </tr>
+                    <tr>
+                        <td>Double Stout</td>
+                        <td>Stout - American Imperial</td>
+                        <td>8.8</td>
+                        <td>4.09</td>
+                        <td>446</td>
+                        <td>50.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Irish RedBoston Beer Company (Samuel Adams)</td>
+                        <td>Red Ale - Irish</td>
+                        <td>5.8</td>
+                        <td>3.74</td>
+                        <td>873</td>
+                        <td>50.00</td>
+                    </tr>
+                    <tr>
+                        <td>#9</td>
+                        <td>Fruit and Field Beer</td>
+                        <td>5.1</td>
+                        <td>3.54</td>
+                        <td>1442</td>
+                        <td>50.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tire Bite Golden Ale</td>
+                        <td>Blonde Ale - American</td>
+                        <td>5.1</td>
+                        <td>3.23</td>
+                        <td>690</td>
+                        <td>49.00</td>
+                    </tr>
+                    <tr>
+                        <td>Oktoberfest</td>
+                        <td>Lager - Märzen / Oktoberfest</td>
+                        <td>6.5</td>
+                        <td>4.11</td>
+                        <td>422</td>
+                        <td>49.00</td>
+                    </tr>
+                    <tr>
+                        <td>Big Bear Black Stout</td>
+                        <td>Stout - American Imperial</td>
+                        <td>8.1</td>
+                        <td>4.18</td>
+                        <td>1003</td>
+                        <td>49.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saranac Black &amp; Tan</td>
+                        <td>Porter - American</td>
+                        <td>5.4</td>
+                        <td>3.59</td>
+                        <td>528</td>
+                        <td>49.00</td>
+                    </tr>
+                    <tr>
+                        <td>Scrimshaw Pilsner</td>
+                        <td>Pilsner - German</td>
+                        <td>4.5</td>
+                        <td>3.93</td>
+                        <td>576</td>
+                        <td>49.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shakespeare Oatmeal Stout</td>
+                        <td>Stout - Oatmeal</td>
+                        <td>5.8</td>
+                        <td>4.19</td>
+                        <td>1560</td>
+                        <td>49.00</td>
+                    </tr>
+                    <tr>
+                        <td>Duvel</td>
+                        <td>Strong Ale - Belgian Pale</td>
+                        <td>8.5</td>
+                        <td>4.34</td>
+                        <td>2450</td>
+                        <td>49.00</td>
+                    </tr>
+                    <tr>
+                        <td>Fred</td>
+                        <td>Strong Ale - American</td>
+                        <td>10.0</td>
+                        <td>3.97</td>
+                        <td>709</td>
+                        <td>48.00</td>
+                    </tr>
+                    <tr>
+                        <td>Old Engine Oil Black Ale</td>
+                        <td>Porter - English</td>
+                        <td>6.0</td>
+                        <td>4.05</td>
+                        <td>665</td>
+                        <td>48.00</td>
+                    </tr>
+                    <tr>
+                        <td>Trappist Westvleteren 8 (VIII)Brouwerij Westvleteren (Sint-Sixtusabdij van Westvleteren)</td>
+                        <td>Dubbel</td>
+                        <td>8.0</td>
+                        <td>4.51</td>
+                        <td>707</td>
+                        <td>48.00</td>
+                    </tr>
+                    <tr>
+                        <td>Jubelale</td>
+                        <td>Winter Warmer</td>
+                        <td>6.7</td>
+                        <td>3.96</td>
+                        <td>679</td>
+                        <td>48.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bender</td>
+                        <td>Brown Ale - American</td>
+                        <td>5.5</td>
+                        <td>4.29</td>
+                        <td>683</td>
+                        <td>47.00</td>
+                    </tr>
+                    <tr>
+                        <td>Domaine DuPage French Style Country Ale</td>
+                        <td>Farmhouse Ale - Bière de Garde</td>
+                        <td>6.2</td>
+                        <td>3.84</td>
+                        <td>422</td>
+                        <td>47.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saison Dupont</td>
+                        <td>Farmhouse Ale - Saison</td>
+                        <td>6.5</td>
+                        <td>4.23</td>
+                        <td>1277</td>
+                        <td>47.00</td>
+                    </tr>
+                    <tr>
+                        <td>Spaten Oktoberfestbier Ur-Märzen</td>
+                        <td>Lager - Märzen / Oktoberfest</td>
+                        <td>5.9</td>
+                        <td>3.69</td>
+                        <td>1067</td>
+                        <td>47.00</td>
+                    </tr>
+                    <tr>
+                        <td>471 Small Batch IPA</td>
+                        <td>IPA - Imperial</td>
+                        <td>9.2</td>
+                        <td>3.90</td>
+                        <td>699</td>
+                        <td>47.00</td>
+                    </tr>
+                    <tr>
+                        <td>Harp Lager</td>
+                        <td>Lager - European Pale</td>
+                        <td>5.0</td>
+                        <td>3.50</td>
+                        <td>714</td>
+                        <td>47.00</td>
+                    </tr>
+                    <tr>
+                        <td>Siberian Night Imperial Stout</td>
+                        <td>Stout - Russian Imperial</td>
+                        <td>9.7</td>
+                        <td>4.16</td>
+                        <td>740</td>
+                        <td>47.00</td>
+                    </tr>
+                    <tr>
+                        <td>Wake-n-Bake Coffee Oatmeal Imperial Stout</td>
+                        <td>Stout - Oatmeal</td>
+                        <td>9.4</td>
+                        <td>4.17</td>
+                        <td>916</td>
+                        <td>47.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tripel Ale</td>
+                        <td>Tripel</td>
+                        <td>9.0</td>
+                        <td>4.13</td>
+                        <td>782</td>
+                        <td>46.00</td>
+                    </tr>
+                    <tr>
+                        <td>Circus Boy The Hefeweizen!</td>
+                        <td>Wheat Beer - American Pale</td>
+                        <td>4.5</td>
+                        <td>3.61</td>
+                        <td>658</td>
+                        <td>46.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hofbräu Oktoberfestbier</td>
+                        <td>Lager - Märzen / Oktoberfest</td>
+                        <td>6.3</td>
+                        <td>3.54</td>
+                        <td>451</td>
+                        <td>46.00</td>
+                    </tr>
+                    <tr>
+                        <td>Avec Les Bons Voeux</td>
+                        <td>Farmhouse Ale - Saison</td>
+                        <td>9.5</td>
+                        <td>4.19</td>
+                        <td>500</td>
+                        <td>46.00</td>
+                    </tr>
+                    <tr>
+                        <td>Honey Weiss</td>
+                        <td>Wheat Beer - Kristallweizen</td>
+                        <td>4.9</td>
+                        <td>3.19</td>
+                        <td>450</td>
+                        <td>45.00</td>
+                    </tr>
+                    <tr>
+                        <td>Double White Ale</td>
+                        <td>Wheat Beer - Witbier</td>
+                        <td>6.6</td>
+                        <td>4.10</td>
+                        <td>586</td>
+                        <td>45.00</td>
+                    </tr>
+                    <tr>
+                        <td>Eye of the Hawk</td>
+                        <td>Strong Ale - American</td>
+                        <td>8.0</td>
+                        <td>3.62</td>
+                        <td>436</td>
+                        <td>44.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cream Stout</td>
+                        <td>Stout - Sweet / Milk</td>
+                        <td>6.5</td>
+                        <td>3.88</td>
+                        <td>567</td>
+                        <td>44.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Honey PorterBoston Beer Company (Samuel Adams)</td>
+                        <td>Porter - English</td>
+                        <td>5.4</td>
+                        <td>3.77</td>
+                        <td>689</td>
+                        <td>44.00</td>
+                    </tr>
+                    <tr>
+                        <td>Robust Porter</td>
+                        <td>Porter - Robust</td>
+                        <td>6.2</td>
+                        <td>4.11</td>
+                        <td>888</td>
+                        <td>44.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mocha Porter</td>
+                        <td>Porter - American</td>
+                        <td>5.6</td>
+                        <td>3.90</td>
+                        <td>1292</td>
+                        <td>44.00</td>
+                    </tr>
+                    <tr>
+                        <td>The Kaiser</td>
+                        <td>Lager - Märzen / Oktoberfest</td>
+                        <td>8.0</td>
+                        <td>3.65</td>
+                        <td>581</td>
+                        <td>44.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams OctoberfestBoston Beer Company (Samuel Adams)</td>
+                        <td>Lager - Märzen / Oktoberfest</td>
+                        <td>5.3</td>
+                        <td>3.83</td>
+                        <td>1893</td>
+                        <td>43.00</td>
+                    </tr>
+                    <tr>
+                        <td>DBA (Double Barrel Ale)</td>
+                        <td>Pale Ale - English</td>
+                        <td>5.0</td>
+                        <td>3.85</td>
+                        <td>536</td>
+                        <td>43.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hennepin</td>
+                        <td>Farmhouse Ale - Saison</td>
+                        <td>7.7</td>
+                        <td>4.25</td>
+                        <td>1866</td>
+                        <td>43.00</td>
+                    </tr>
+                    <tr>
+                        <td>Olde School Barleywine</td>
+                        <td>Barleywine - American</td>
+                        <td>15.0</td>
+                        <td>3.70</td>
+                        <td>871</td>
+                        <td>43.00</td>
+                    </tr>
+                    <tr>
+                        <td>O'Hara's Irish Stout</td>
+                        <td>Stout - Irish Dry</td>
+                        <td>4.3</td>
+                        <td>3.99</td>
+                        <td>432</td>
+                        <td>43.00</td>
+                    </tr>
+                    <tr>
+                        <td>Oatmeal StoutSamuel Smith Old Brewery (Tadcaster)</td>
+                        <td>Stout - Oatmeal</td>
+                        <td>5.0</td>
+                        <td>4.24</td>
+                        <td>2025</td>
+                        <td>42.00</td>
+                    </tr>
+                    <tr>
+                        <td>Peg Leg Imperial Stout</td>
+                        <td>Stout - Russian Imperial</td>
+                        <td>8.0</td>
+                        <td>3.66</td>
+                        <td>626</td>
+                        <td>42.00</td>
+                    </tr>
+                    <tr>
+                        <td>Blanche De Chambly</td>
+                        <td>Wheat Beer - Witbier</td>
+                        <td>5.0</td>
+                        <td>3.97</td>
+                        <td>941</td>
+                        <td>42.00</td>
+                    </tr>
+                    <tr>
+                        <td>Dirty Bastard</td>
+                        <td>Scotch Ale / Wee Heavy</td>
+                        <td>8.5</td>
+                        <td>3.94</td>
+                        <td>1257</td>
+                        <td>42.00</td>
+                    </tr>
+                    <tr>
+                        <td>Nut Brown AleSamuel Smith Old Brewery (Tadcaster)</td>
+                        <td>Brown Ale - English</td>
+                        <td>5.0</td>
+                        <td>4.15</td>
+                        <td>1309</td>
+                        <td>42.00</td>
+                    </tr>
+                    <tr>
+                        <td>Fuller's Vintage Ale</td>
+                        <td>Old Ale</td>
+                        <td>8.5</td>
+                        <td>4.07</td>
+                        <td>558</td>
+                        <td>42.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hacker-Pschorr Oktoberfest Märzen</td>
+                        <td>Lager - Märzen / Oktoberfest</td>
+                        <td>5.8</td>
+                        <td>4.07</td>
+                        <td>687</td>
+                        <td>42.00</td>
+                    </tr>
+                    <tr>
+                        <td>Eliot Ness</td>
+                        <td>Lager - Vienna</td>
+                        <td>6.1</td>
+                        <td>4.21</td>
+                        <td>827</td>
+                        <td>42.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sam Adams LightBoston Beer Company (Samuel Adams)</td>
+                        <td>Lager - Light</td>
+                        <td>4.0</td>
+                        <td>3.69</td>
+                        <td>833</td>
+                        <td>42.00</td>
+                    </tr>
+                    <tr>
+                        <td>Heineken Lager Beer</td>
+                        <td>Lager - European Pale</td>
+                        <td>5.0</td>
+                        <td>3.03</td>
+                        <td>1268</td>
+                        <td>42.00</td>
+                    </tr>
+                    <tr>
+                        <td>Birra MorettiBirra Moretti (Heineken)</td>
+                        <td>Lager - European Pale</td>
+                        <td>4.6</td>
+                        <td>3.19</td>
+                        <td>412</td>
+                        <td>42.00</td>
+                    </tr>
+                    <tr>
+                        <td>Schwarzbier</td>
+                        <td>Lager - Schwarzbier</td>
+                        <td>4.8</td>
+                        <td>4.04</td>
+                        <td>695</td>
+                        <td>41.00</td>
+                    </tr>
+                    <tr>
+                        <td>Beck's Oktoberfest</td>
+                        <td>Lager - Märzen / Oktoberfest</td>
+                        <td>5.0</td>
+                        <td>3.55</td>
+                        <td>401</td>
+                        <td>41.00</td>
+                    </tr>
+                    <tr>
+                        <td>Organic Pale AleSamuel Smith Old Brewery (Tadcaster)</td>
+                        <td>Pale Ale - English</td>
+                        <td>5.0</td>
+                        <td>3.98</td>
+                        <td>652</td>
+                        <td>41.00</td>
+                    </tr>
+                    <tr>
+                        <td>Baltic Porter</td>
+                        <td>Porter - Baltic</td>
+                        <td>9.0</td>
+                        <td>4.01</td>
+                        <td>405</td>
+                        <td>41.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saranac Adirondack Lager</td>
+                        <td>Pilsner - German</td>
+                        <td>5.5</td>
+                        <td>3.57</td>
+                        <td>475</td>
+                        <td>41.00</td>
+                    </tr>
+                    <tr>
+                        <td>The Hairy Eyeball</td>
+                        <td>Strong Ale - American</td>
+                        <td>9.1</td>
+                        <td>3.77</td>
+                        <td>742</td>
+                        <td>41.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams HefeweizenBoston Beer Company (Samuel Adams)</td>
+                        <td>Wheat Beer - Hefeweizen</td>
+                        <td>5.4</td>
+                        <td>3.36</td>
+                        <td>600</td>
+                        <td>40.00</td>
+                    </tr>
+                    <tr>
+                        <td>Chipotle Ale</td>
+                        <td>Chile Beer</td>
+                        <td>5.4</td>
+                        <td>3.42</td>
+                        <td>669</td>
+                        <td>40.00</td>
+                    </tr>
+                    <tr>
+                        <td>Liberator Doppelbock</td>
+                        <td>Bock - Doppelbock</td>
+                        <td>8.5</td>
+                        <td>4.23</td>
+                        <td>513</td>
+                        <td>40.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bam Bière</td>
+                        <td>Farmhouse Ale - Saison</td>
+                        <td>4.5</td>
+                        <td>4.00</td>
+                        <td>548</td>
+                        <td>40.00</td>
+                    </tr>
+                    <tr>
+                        <td>Foret</td>
+                        <td>Farmhouse Ale - Saison</td>
+                        <td>7.5</td>
+                        <td>4.08</td>
+                        <td>421</td>
+                        <td>40.00</td>
+                    </tr>
+                    <tr>
+                        <td>Kirin Ichiban</td>
+                        <td>Lager - American</td>
+                        <td>5.0</td>
+                        <td>2.82</td>
+                        <td>504</td>
+                        <td>39.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mothership Wit</td>
+                        <td>Wheat Beer - Witbier</td>
+                        <td>4.8</td>
+                        <td>3.82</td>
+                        <td>550</td>
+                        <td>39.00</td>
+                    </tr>
+                    <tr>
+                        <td>Black Albert</td>
+                        <td>Stout - Russian Imperial</td>
+                        <td>13.0</td>
+                        <td>4.18</td>
+                        <td>724</td>
+                        <td>39.00</td>
+                    </tr>
+                    <tr>
+                        <td>Oatmeal Stout</td>
+                        <td>Stout - Oatmeal</td>
+                        <td>4.9</td>
+                        <td>3.73</td>
+                        <td>430</td>
+                        <td>39.00</td>
+                    </tr>
+                    <tr>
+                        <td>Road Dog</td>
+                        <td>Porter - American</td>
+                        <td>6.0</td>
+                        <td>3.62</td>
+                        <td>799</td>
+                        <td>39.00</td>
+                    </tr>
+                    <tr>
+                        <td>Skull Splitter</td>
+                        <td>Scotch Ale / Wee Heavy</td>
+                        <td>8.5</td>
+                        <td>3.97</td>
+                        <td>806</td>
+                        <td>39.00</td>
+                    </tr>
+                    <tr>
+                        <td>Espresso Oak Aged Yeti Imperial Stout</td>
+                        <td>Stout - American Imperial</td>
+                        <td>9.5</td>
+                        <td>4.05</td>
+                        <td>734</td>
+                        <td>39.00</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate Oak Aged Yeti</td>
+                        <td>Stout - American Imperial</td>
+                        <td>9.5</td>
+                        <td>3.92</td>
+                        <td>587</td>
+                        <td>39.00</td>
+                    </tr>
+                    <tr>
+                        <td>Beer Geek Breakfast</td>
+                        <td>Stout - Oatmeal</td>
+                        <td>7.5</td>
+                        <td>4.04</td>
+                        <td>771</td>
+                        <td>38.00</td>
+                    </tr>
+                    <tr>
+                        <td>Moloko</td>
+                        <td>Stout - Sweet / Milk</td>
+                        <td>8.0</td>
+                        <td>4.12</td>
+                        <td>403</td>
+                        <td>38.00</td>
+                    </tr>
+                    <tr>
+                        <td>Agnus Dei (Abbey Pale Ale)</td>
+                        <td>Tripel</td>
+                        <td>7.5</td>
+                        <td>4.00</td>
+                        <td>448</td>
+                        <td>38.00</td>
+                    </tr>
+                    <tr>
+                        <td>Old Peculier</td>
+                        <td>Old Ale</td>
+                        <td>5.6</td>
+                        <td>4.01</td>
+                        <td>543</td>
+                        <td>38.00</td>
+                    </tr>
+                    <tr>
+                        <td>Old Stock Ale</td>
+                        <td>Old Ale</td>
+                        <td>12.0</td>
+                        <td>3.90</td>
+                        <td>1233</td>
+                        <td>38.00</td>
+                    </tr>
+                    <tr>
+                        <td>Warsteiner Premium Dunkel</td>
+                        <td>Lager - Munich Dunkel</td>
+                        <td>4.9</td>
+                        <td>3.63</td>
+                        <td>585</td>
+                        <td>38.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hell Or High Watermelon Wheat Beer</td>
+                        <td>Fruit and Field Beer</td>
+                        <td>4.9</td>
+                        <td>3.39</td>
+                        <td>472</td>
+                        <td>37.00</td>
+                    </tr>
+                    <tr>
+                        <td>Southampton Altbier</td>
+                        <td>Altbier</td>
+                        <td>5.0</td>
+                        <td>3.74</td>
+                        <td>445</td>
+                        <td>37.00</td>
+                    </tr>
+                    <tr>
+                        <td>Witte Wheat Ale</td>
+                        <td>Wheat Beer - Witbier</td>
+                        <td>5.2</td>
+                        <td>3.96</td>
+                        <td>658</td>
+                        <td>37.00</td>
+                    </tr>
+                    <tr>
+                        <td>Chicory Stout</td>
+                        <td>Stout - American</td>
+                        <td>5.2</td>
+                        <td>3.75</td>
+                        <td>1240</td>
+                        <td>37.00</td>
+                    </tr>
+                    <tr>
+                        <td>Black Butte Porter</td>
+                        <td>Porter - American</td>
+                        <td>5.2</td>
+                        <td>4.27</td>
+                        <td>1044</td>
+                        <td>37.00</td>
+                    </tr>
+                    <tr>
+                        <td>Beck's</td>
+                        <td>Pilsner - German</td>
+                        <td>5.0</td>
+                        <td>3.15</td>
+                        <td>609</td>
+                        <td>36.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bully! Porter</td>
+                        <td>Porter - English</td>
+                        <td>6.0</td>
+                        <td>4.00</td>
+                        <td>478</td>
+                        <td>36.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pumpkin Ale</td>
+                        <td>Pumpkin Beer</td>
+                        <td>5.9</td>
+                        <td>3.74</td>
+                        <td>730</td>
+                        <td>36.00</td>
+                    </tr>
+                    <tr>
+                        <td>Boont Amber Ale</td>
+                        <td>Red Ale - American Amber / Red</td>
+                        <td>5.8</td>
+                        <td>3.97</td>
+                        <td>458</td>
+                        <td>36.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Imperial WhiteBoston Beer Company (Samuel Adams)</td>
+                        <td>Wheat Beer - Witbier</td>
+                        <td>10.3</td>
+                        <td>3.27</td>
+                        <td>574</td>
+                        <td>36.00</td>
+                    </tr>
+                    <tr>
+                        <td>Westmalle Trappist Tripel</td>
+                        <td>Tripel</td>
+                        <td>9.5</td>
+                        <td>4.21</td>
+                        <td>1436</td>
+                        <td>36.00</td>
+                    </tr>
+                    <tr>
+                        <td>Local 1</td>
+                        <td>Strong Ale - Belgian Pale</td>
+                        <td>9.0</td>
+                        <td>4.07</td>
+                        <td>788</td>
+                        <td>36.00</td>
+                    </tr>
+                    <tr>
+                        <td>Life and Limb</td>
+                        <td>Strong Ale - American</td>
+                        <td>10.2</td>
+                        <td>3.89</td>
+                        <td>674</td>
+                        <td>36.00</td>
+                    </tr>
+                    <tr>
+                        <td>Blackout Stout</td>
+                        <td>Stout - Russian Imperial</td>
+                        <td>9.9</td>
+                        <td>4.18</td>
+                        <td>957</td>
+                        <td>36.00</td>
+                    </tr>
+                    <tr>
+                        <td>Moose Drool Brown Ale</td>
+                        <td>Brown Ale - American</td>
+                        <td>5.1</td>
+                        <td>3.81</td>
+                        <td>754</td>
+                        <td>36.00</td>
+                    </tr>
+                    <tr>
+                        <td>Budweiser Select</td>
+                        <td>Lager - Light</td>
+                        <td>4.3</td>
+                        <td>2.57</td>
+                        <td>440</td>
+                        <td>36.00</td>
+                    </tr>
+                    <tr>
+                        <td>Asahi Super Dry</td>
+                        <td>Lager - Japanese Rice</td>
+                        <td>5.0</td>
+                        <td>2.99</td>
+                        <td>422</td>
+                        <td>36.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shiner Bohemian Black Lager</td>
+                        <td>Lager - Schwarzbier</td>
+                        <td>4.9</td>
+                        <td>3.63</td>
+                        <td>433</td>
+                        <td>35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hibernation Ale</td>
+                        <td>Old Ale</td>
+                        <td>8.7</td>
+                        <td>3.93</td>
+                        <td>964</td>
+                        <td>35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Longboard Island Lager</td>
+                        <td>Lager - American</td>
+                        <td>4.6</td>
+                        <td>3.63</td>
+                        <td>467</td>
+                        <td>35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Double Bag</td>
+                        <td>Altbier</td>
+                        <td>7.2</td>
+                        <td>4.03</td>
+                        <td>481</td>
+                        <td>35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Old #38 Stout</td>
+                        <td>Stout - Irish Dry</td>
+                        <td>5.4</td>
+                        <td>3.88</td>
+                        <td>575</td>
+                        <td>35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Black</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>7.5</td>
+                        <td>4.05</td>
+                        <td>500</td>
+                        <td>35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Winter Ale</td>
+                        <td>Scottish Ale</td>
+                        <td>6.1</td>
+                        <td>3.77</td>
+                        <td>410</td>
+                        <td>35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Fat Tire Amber Ale</td>
+                        <td>Red Ale - American Amber / Red</td>
+                        <td>5.2</td>
+                        <td>3.82</td>
+                        <td>1675</td>
+                        <td>34.00</td>
+                    </tr>
+                    <tr>
+                        <td>Guinness Extra Stout (Original)</td>
+                        <td>Stout - Irish Dry</td>
+                        <td>5.6</td>
+                        <td>3.74</td>
+                        <td>1221</td>
+                        <td>34.00</td>
+                    </tr>
+                    <tr>
+                        <td>St-Ambroise Oatmeal Stout</td>
+                        <td>Stout - Oatmeal</td>
+                        <td>5.0</td>
+                        <td>4.10</td>
+                        <td>540</td>
+                        <td>34.00</td>
+                    </tr>
+                    <tr>
+                        <td>Schneider Weisse Tap 4 Wiesen Edel-Weisse</td>
+                        <td>Wheat Beer - Hefeweizen</td>
+                        <td>6.2</td>
+                        <td>4.12</td>
+                        <td>474</td>
+                        <td>34.00</td>
+                    </tr>
+                    <tr>
+                        <td>Turbodog</td>
+                        <td>Brown Ale - English</td>
+                        <td>5.6</td>
+                        <td>3.71</td>
+                        <td>877</td>
+                        <td>34.00</td>
+                    </tr>
+                    <tr>
+                        <td>Modelo Especial</td>
+                        <td>Lager - Adjunct</td>
+                        <td>4.4</td>
+                        <td>3.21</td>
+                        <td>444</td>
+                        <td>34.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saranac Black Forest Black Beer</td>
+                        <td>Lager - Schwarzbier</td>
+                        <td>5.5</td>
+                        <td>3.81</td>
+                        <td>543</td>
+                        <td>34.00</td>
+                    </tr>
+                    <tr>
+                        <td>Westmalle Trappist Dubbel</td>
+                        <td>Dubbel</td>
+                        <td>7.0</td>
+                        <td>4.14</td>
+                        <td>1026</td>
+                        <td>33.00</td>
+                    </tr>
+                    <tr>
+                        <td>Brown Ale</td>
+                        <td>Brown Ale - American</td>
+                        <td>5.6</td>
+                        <td>3.82</td>
+                        <td>867</td>
+                        <td>33.00</td>
+                    </tr>
+                    <tr>
+                        <td>Miles Davis' Bitches Brew</td>
+                        <td>Stout - American Imperial</td>
+                        <td>9.0</td>
+                        <td>4.12</td>
+                        <td>609</td>
+                        <td>33.00</td>
+                    </tr>
+                    <tr>
+                        <td>Aphrodisiaque</td>
+                        <td>Stout - American</td>
+                        <td>6.5</td>
+                        <td>4.17</td>
+                        <td>440</td>
+                        <td>32.00</td>
+                    </tr>
+                    <tr>
+                        <td>Whirlwind Witbier</td>
+                        <td>Wheat Beer - Witbier</td>
+                        <td>5.0</td>
+                        <td>3.93</td>
+                        <td>519</td>
+                        <td>32.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams White AleBoston Beer Company (Samuel Adams)</td>
+                        <td>Wheat Beer - Witbier</td>
+                        <td>5.2</td>
+                        <td>3.69</td>
+                        <td>1044</td>
+                        <td>32.00</td>
+                    </tr>
+                    <tr>
+                        <td>Java Head Stout</td>
+                        <td>Stout - Oatmeal</td>
+                        <td>7.5</td>
+                        <td>3.83</td>
+                        <td>515</td>
+                        <td>32.00</td>
+                    </tr>
+                    <tr>
+                        <td>Trappistes Rochefort 6</td>
+                        <td>Dubbel</td>
+                        <td>7.5</td>
+                        <td>4.14</td>
+                        <td>763</td>
+                        <td>32.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sofie</td>
+                        <td>Farmhouse Ale - Saison</td>
+                        <td>6.5</td>
+                        <td>4.19</td>
+                        <td>591</td>
+                        <td>32.00</td>
+                    </tr>
+                    <tr>
+                        <td>Dos Equis Special Lager</td>
+                        <td>Lager - Adjunct</td>
+                        <td>4.2</td>
+                        <td>3.09</td>
+                        <td>477</td>
+                        <td>32.00</td>
+                    </tr>
+                    <tr>
+                        <td>Amber</td>
+                        <td>Lager - American Amber / Red</td>
+                        <td>4.5</td>
+                        <td>3.55</td>
+                        <td>424</td>
+                        <td>32.00</td>
+                    </tr>
+                    <tr>
+                        <td>Carlsberg Beer</td>
+                        <td>Lager - European Pale</td>
+                        <td>5.0</td>
+                        <td>3.26</td>
+                        <td>458</td>
+                        <td>32.00</td>
+                    </tr>
+                    <tr>
+                        <td>Singha</td>
+                        <td>Lager - European Pale</td>
+                        <td>5.0</td>
+                        <td>3.20</td>
+                        <td>421</td>
+                        <td>31.00</td>
+                    </tr>
+                    <tr>
+                        <td>Foster's Lager</td>
+                        <td>Lager - Adjunct</td>
+                        <td>5.0</td>
+                        <td>2.88</td>
+                        <td>584</td>
+                        <td>31.00</td>
+                    </tr>
+                    <tr>
+                        <td>Adam</td>
+                        <td>Old Ale</td>
+                        <td>10.0</td>
+                        <td>4.05</td>
+                        <td>813</td>
+                        <td>31.00</td>
+                    </tr>
+                    <tr>
+                        <td>Abbey</td>
+                        <td>Dubbel</td>
+                        <td>7.0</td>
+                        <td>3.99</td>
+                        <td>640</td>
+                        <td>31.00</td>
+                    </tr>
+                    <tr>
+                        <td>Midas Touch</td>
+                        <td>Herb and Spice Beer</td>
+                        <td>9.0</td>
+                        <td>3.56</td>
+                        <td>1433</td>
+                        <td>31.00</td>
+                    </tr>
+                    <tr>
+                        <td>Ellie's Brown Ale</td>
+                        <td>Brown Ale - American</td>
+                        <td>5.5</td>
+                        <td>3.98</td>
+                        <td>566</td>
+                        <td>31.00</td>
+                    </tr>
+                    <tr>
+                        <td>Blithering Idiot</td>
+                        <td>Barleywine - English</td>
+                        <td>11.1</td>
+                        <td>3.61</td>
+                        <td>737</td>
+                        <td>31.00</td>
+                    </tr>
+                    <tr>
+                        <td>Imperial StoutSamuel Smith Old Brewery (Tadcaster)</td>
+                        <td>Stout - Russian Imperial</td>
+                        <td>7.0</td>
+                        <td>4.17</td>
+                        <td>1600</td>
+                        <td>31.00</td>
+                    </tr>
+                    <tr>
+                        <td>McChouffe</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>8.0</td>
+                        <td>3.97</td>
+                        <td>448</td>
+                        <td>31.00</td>
+                    </tr>
+                    <tr>
+                        <td>La Fin Du Monde</td>
+                        <td>Tripel</td>
+                        <td>9.0</td>
+                        <td>4.30</td>
+                        <td>2483</td>
+                        <td>31.00</td>
+                    </tr>
+                    <tr>
+                        <td>312 Urban Wheat</td>
+                        <td>Wheat Beer - American Pale</td>
+                        <td>4.2</td>
+                        <td>3.74</td>
+                        <td>645</td>
+                        <td>31.00</td>
+                    </tr>
+                    <tr>
+                        <td>KBS (Kentucky Breakfast Stout)</td>
+                        <td>Stout - American Imperial</td>
+                        <td>12.3</td>
+                        <td>4.40</td>
+                        <td>1932</td>
+                        <td>31.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino Stout</td>
+                        <td>Stout - American Imperial</td>
+                        <td>9.2</td>
+                        <td>3.85</td>
+                        <td>910</td>
+                        <td>30.00</td>
+                    </tr>
+                    <tr>
+                        <td>Holy Moses White Ale</td>
+                        <td>Wheat Beer - Witbier</td>
+                        <td>5.4</td>
+                        <td>3.97</td>
+                        <td>476</td>
+                        <td>30.00</td>
+                    </tr>
+                    <tr>
+                        <td>Black Chocolate Stout</td>
+                        <td>Stout - Russian Imperial</td>
+                        <td>10.0</td>
+                        <td>4.03</td>
+                        <td>2447</td>
+                        <td>30.00</td>
+                    </tr>
+                    <tr>
+                        <td>Black Bavarian</td>
+                        <td>Lager - Schwarzbier</td>
+                        <td>6.0</td>
+                        <td>4.13</td>
+                        <td>422</td>
+                        <td>30.00</td>
+                    </tr>
+                    <tr>
+                        <td>Festbier</td>
+                        <td>Lager - Märzen / Oktoberfest</td>
+                        <td>5.6</td>
+                        <td>3.96</td>
+                        <td>623</td>
+                        <td>29.00</td>
+                    </tr>
+                    <tr>
+                        <td>Münchner Hell (Original Munich Lager)</td>
+                        <td>Lager - Helles</td>
+                        <td>4.9</td>
+                        <td>3.99</td>
+                        <td>402</td>
+                        <td>29.00</td>
+                    </tr>
+                    <tr>
+                        <td>Grand Cru</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>7.2</td>
+                        <td>4.09</td>
+                        <td>491</td>
+                        <td>29.00</td>
+                    </tr>
+                    <tr>
+                        <td>Ten FIDY</td>
+                        <td>Stout - American Imperial</td>
+                        <td>10.5</td>
+                        <td>4.17</td>
+                        <td>1729</td>
+                        <td>29.00</td>
+                    </tr>
+                    <tr>
+                        <td>Robert The Bruce</td>
+                        <td>Scottish Ale</td>
+                        <td>6.5</td>
+                        <td>3.91</td>
+                        <td>850</td>
+                        <td>28.00</td>
+                    </tr>
+                    <tr>
+                        <td>Traquair House Ale</td>
+                        <td>Scotch Ale / Wee Heavy</td>
+                        <td>7.2</td>
+                        <td>4.14</td>
+                        <td>535</td>
+                        <td>28.00</td>
+                    </tr>
+                    <tr>
+                        <td>V-Twelve</td>
+                        <td>Quadrupel (Quad)</td>
+                        <td>12.0</td>
+                        <td>3.91</td>
+                        <td>532</td>
+                        <td>28.00</td>
+                    </tr>
+                    <tr>
+                        <td>Fuller's London Porter</td>
+                        <td>Porter - English</td>
+                        <td>5.4</td>
+                        <td>4.27</td>
+                        <td>1069</td>
+                        <td>28.00</td>
+                    </tr>
+                    <tr>
+                        <td>Augustijn Ale</td>
+                        <td>Tripel</td>
+                        <td>8.0</td>
+                        <td>3.86</td>
+                        <td>409</td>
+                        <td>28.00</td>
+                    </tr>
+                    <tr>
+                        <td>Milk Stout</td>
+                        <td>Stout - Sweet / Milk</td>
+                        <td>6.0</td>
+                        <td>3.94</td>
+                        <td>1273</td>
+                        <td>28.00</td>
+                    </tr>
+                    <tr>
+                        <td>Delirium Tremens</td>
+                        <td>Strong Ale - Belgian Pale</td>
+                        <td>8.5</td>
+                        <td>4.03</td>
+                        <td>1420</td>
+                        <td>28.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bud Light Lime</td>
+                        <td>Lager - Light</td>
+                        <td>4.2</td>
+                        <td>2.70</td>
+                        <td>459</td>
+                        <td>28.00</td>
+                    </tr>
+                    <tr>
+                        <td>Negra Modelo</td>
+                        <td>Lager - Munich Dunkel</td>
+                        <td>5.4</td>
+                        <td>3.60</td>
+                        <td>842</td>
+                        <td>27.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Winter LagerBoston Beer Company (Samuel Adams)</td>
+                        <td>Bock - Traditional</td>
+                        <td>5.6</td>
+                        <td>3.81</td>
+                        <td>1824</td>
+                        <td>27.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hazelnut Brown Nectar</td>
+                        <td>Brown Ale - American</td>
+                        <td>5.6</td>
+                        <td>4.05</td>
+                        <td>1258</td>
+                        <td>27.00</td>
+                    </tr>
+                    <tr>
+                        <td>Maduro Brown Ale</td>
+                        <td>Brown Ale - English</td>
+                        <td>5.5</td>
+                        <td>4.05</td>
+                        <td>440</td>
+                        <td>27.00</td>
+                    </tr>
+                    <tr>
+                        <td>Fantôme Saison</td>
+                        <td>Farmhouse Ale - Saison</td>
+                        <td>8.0</td>
+                        <td>4.36</td>
+                        <td>688</td>
+                        <td>27.00</td>
+                    </tr>
+                    <tr>
+                        <td>Delirium Nocturnum</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>8.5</td>
+                        <td>3.86</td>
+                        <td>782</td>
+                        <td>27.00</td>
+                    </tr>
+                    <tr>
+                        <td>Imperial Stout</td>
+                        <td>Stout - Russian Imperial</td>
+                        <td>9.0</td>
+                        <td>4.07</td>
+                        <td>421</td>
+                        <td>27.00</td>
+                    </tr>
+                    <tr>
+                        <td>B.O.R.I.S. The Crusher</td>
+                        <td>Stout - Russian Imperial</td>
+                        <td>9.4</td>
+                        <td>4.17</td>
+                        <td>834</td>
+                        <td>27.00</td>
+                    </tr>
+                    <tr>
+                        <td>Winter Warmer</td>
+                        <td>Winter Warmer</td>
+                        <td>5.9</td>
+                        <td>3.02</td>
+                        <td>613</td>
+                        <td>27.00</td>
+                    </tr>
+                    <tr>
+                        <td>White</td>
+                        <td>Wheat Beer - Witbier</td>
+                        <td>5.1</td>
+                        <td>4.23</td>
+                        <td>1136</td>
+                        <td>27.00</td>
+                    </tr>
+                    <tr>
+                        <td>Abt 12</td>
+                        <td>Quadrupel (Quad)</td>
+                        <td>10.0</td>
+                        <td>4.33</td>
+                        <td>2217</td>
+                        <td>27.00</td>
+                    </tr>
+                    <tr>
+                        <td>Coffeehouse Porter</td>
+                        <td>Porter - American</td>
+                        <td>6.2</td>
+                        <td>4.07</td>
+                        <td>418</td>
+                        <td>26.00</td>
+                    </tr>
+                    <tr>
+                        <td>Scottish Ale</td>
+                        <td>Scottish Ale</td>
+                        <td>5.2</td>
+                        <td>3.91</td>
+                        <td>837</td>
+                        <td>26.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tripel Karmeliet</td>
+                        <td>Tripel</td>
+                        <td>8.4</td>
+                        <td>4.23</td>
+                        <td>1045</td>
+                        <td>26.00</td>
+                    </tr>
+                    <tr>
+                        <td>Corsendonk Christmas Ale</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>8.1</td>
+                        <td>4.10</td>
+                        <td>483</td>
+                        <td>26.00</td>
+                    </tr>
+                    <tr>
+                        <td>Aecht Schlenkerla Rauchbier Märzen</td>
+                        <td>Lager - Rauchbier</td>
+                        <td>5.4</td>
+                        <td>3.83</td>
+                        <td>889</td>
+                        <td>26.00</td>
+                    </tr>
+                    <tr>
+                        <td>Stella Artois</td>
+                        <td>Lager - European Pale</td>
+                        <td>5.0</td>
+                        <td>3.32</td>
+                        <td>1320</td>
+                        <td>26.00</td>
+                    </tr>
+                    <tr>
+                        <td>Gueuze 100% Lambic</td>
+                        <td>Lambic - Gueuze</td>
+                        <td>5.0</td>
+                        <td>4.26</td>
+                        <td>415</td>
+                        <td>25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shiner Bock</td>
+                        <td>Bock - Traditional</td>
+                        <td>4.4</td>
+                        <td>3.32</td>
+                        <td>914</td>
+                        <td>25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Affligem Blond</td>
+                        <td>Blonde Ale - Belgian</td>
+                        <td>6.8</td>
+                        <td>3.94</td>
+                        <td>454</td>
+                        <td>25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Matilda</td>
+                        <td>Strong Ale - Belgian Pale</td>
+                        <td>7.0</td>
+                        <td>3.92</td>
+                        <td>911</td>
+                        <td>25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mackeson Triple XXX Stout</td>
+                        <td>Stout - Sweet / Milk</td>
+                        <td>4.9</td>
+                        <td>4.03</td>
+                        <td>590</td>
+                        <td>25.00</td>
+                    </tr>
+                    <tr>
+                        <td>UFO Hefeweizen</td>
+                        <td>Wheat Beer - American Pale</td>
+                        <td>4.8</td>
+                        <td>3.65</td>
+                        <td>601</td>
+                        <td>25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Blue Moon Belgian WhiteCoors Brewing Company (Molson-Coors)</td>
+                        <td>Wheat Beer - Witbier</td>
+                        <td>5.4</td>
+                        <td>3.60</td>
+                        <td>1498</td>
+                        <td>25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Scotch AleBoston Beer Company (Samuel Adams)</td>
+                        <td>Scotch Ale / Wee Heavy</td>
+                        <td>5.4</td>
+                        <td>3.83</td>
+                        <td>656</td>
+                        <td>25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tres Blueberry Stout</td>
+                        <td>Stout - American</td>
+                        <td>7.5</td>
+                        <td>3.96</td>
+                        <td>466</td>
+                        <td>25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Victory At Sea - Coffee And Vanilla</td>
+                        <td>Porter - Imperial</td>
+                        <td>10.0</td>
+                        <td>4.18</td>
+                        <td>529</td>
+                        <td>25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Wee Heavy</td>
+                        <td>Scotch Ale / Wee Heavy</td>
+                        <td>6.5</td>
+                        <td>4.06</td>
+                        <td>553</td>
+                        <td>24.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hitachino Nest White Ale</td>
+                        <td>Wheat Beer - Witbier</td>
+                        <td>5.5</td>
+                        <td>4.07</td>
+                        <td>453</td>
+                        <td>24.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tripel</td>
+                        <td>Tripel</td>
+                        <td>8.0</td>
+                        <td>4.23</td>
+                        <td>1038</td>
+                        <td>24.00</td>
+                    </tr>
+                    <tr>
+                        <td>Oude Geuze</td>
+                        <td>Lambic - Gueuze</td>
+                        <td>6.0</td>
+                        <td>4.27</td>
+                        <td>480</td>
+                        <td>24.00</td>
+                    </tr>
+                    <tr>
+                        <td>Redemption</td>
+                        <td>Pale Ale - Belgian</td>
+                        <td>5.2</td>
+                        <td>4.22</td>
+                        <td>421</td>
+                        <td>24.00</td>
+                    </tr>
+                    <tr>
+                        <td>Karma Belgian Style Pale Ale</td>
+                        <td>Pale Ale - Belgian</td>
+                        <td>5.2</td>
+                        <td>3.53</td>
+                        <td>431</td>
+                        <td>23.00</td>
+                    </tr>
+                    <tr>
+                        <td>Chateau Jiahu</td>
+                        <td>Herb and Spice Beer</td>
+                        <td>10.0</td>
+                        <td>3.71</td>
+                        <td>498</td>
+                        <td>23.00</td>
+                    </tr>
+                    <tr>
+                        <td>Unfiltered Wheat</td>
+                        <td>Wheat Beer - American Pale</td>
+                        <td>4.4</td>
+                        <td>3.68</td>
+                        <td>455</td>
+                        <td>23.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Summer AleBoston Beer Company (Samuel Adams)</td>
+                        <td>Wheat Beer - American Pale</td>
+                        <td>5.3</td>
+                        <td>3.56</td>
+                        <td>1517</td>
+                        <td>23.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hefeweissbier</td>
+                        <td>Wheat Beer - Hefeweizen</td>
+                        <td>5.4</td>
+                        <td>4.52</td>
+                        <td>1981</td>
+                        <td>23.00</td>
+                    </tr>
+                    <tr>
+                        <td>Red &amp; White</td>
+                        <td>Wheat Beer - Witbier</td>
+                        <td>10.0</td>
+                        <td>3.81</td>
+                        <td>621</td>
+                        <td>23.00</td>
+                    </tr>
+                    <tr>
+                        <td>Kristallweissbier</td>
+                        <td>Wheat Beer - Kristallweizen</td>
+                        <td>5.4</td>
+                        <td>4.17</td>
+                        <td>617</td>
+                        <td>23.00</td>
+                    </tr>
+                    <tr>
+                        <td>Black Hawk Stout</td>
+                        <td>Stout - Irish Dry</td>
+                        <td>5.2</td>
+                        <td>3.60</td>
+                        <td>412</td>
+                        <td>23.00</td>
+                    </tr>
+                    <tr>
+                        <td>Breakfast Stout</td>
+                        <td>Stout - Oatmeal</td>
+                        <td>8.3</td>
+                        <td>4.35</td>
+                        <td>2502</td>
+                        <td>22.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Imperial StoutBoston Beer Company (Samuel Adams)</td>
+                        <td>Stout - Russian Imperial</td>
+                        <td>9.2</td>
+                        <td>3.72</td>
+                        <td>720</td>
+                        <td>22.00</td>
+                    </tr>
+                    <tr>
+                        <td>Erdinger Weissbier Dunkel</td>
+                        <td>Wheat Beer - Dunkelweizen</td>
+                        <td>5.3</td>
+                        <td>3.80</td>
+                        <td>538</td>
+                        <td>22.00</td>
+                    </tr>
+                    <tr>
+                        <td>Don De Dieu</td>
+                        <td>Tripel</td>
+                        <td>9.0</td>
+                        <td>4.10</td>
+                        <td>1096</td>
+                        <td>22.00</td>
+                    </tr>
+                    <tr>
+                        <td>Stille Nacht</td>
+                        <td>Strong Ale - Belgian Pale</td>
+                        <td>12.0</td>
+                        <td>3.86</td>
+                        <td>447</td>
+                        <td>22.00</td>
+                    </tr>
+                    <tr>
+                        <td>World Wide Stout</td>
+                        <td>Stout - American Imperial</td>
+                        <td>18.0</td>
+                        <td>3.77</td>
+                        <td>1447</td>
+                        <td>22.00</td>
+                    </tr>
+                    <tr>
+                        <td>Oatmeal Porter</td>
+                        <td>Porter - American</td>
+                        <td>5.8</td>
+                        <td>3.97</td>
+                        <td>481</td>
+                        <td>22.00</td>
+                    </tr>
+                    <tr>
+                        <td>Corsendonk Pater / Abbey Brown Ale</td>
+                        <td>Dubbel</td>
+                        <td>7.5</td>
+                        <td>3.99</td>
+                        <td>548</td>
+                        <td>22.00</td>
+                    </tr>
+                    <tr>
+                        <td>Noire De Chambly / Chambly Noire</td>
+                        <td>Brown Ale - Belgian Dark</td>
+                        <td>6.2</td>
+                        <td>3.74</td>
+                        <td>641</td>
+                        <td>22.00</td>
+                    </tr>
+                    <tr>
+                        <td>Girardin Gueuze 1882 (Black Label)</td>
+                        <td>Lambic - Gueuze</td>
+                        <td>5.0</td>
+                        <td>4.26</td>
+                        <td>462</td>
+                        <td>22.00</td>
+                    </tr>
+                    <tr>
+                        <td>Old Jubilation</td>
+                        <td>Old Ale</td>
+                        <td>8.3</td>
+                        <td>3.84</td>
+                        <td>712</td>
+                        <td>22.00</td>
+                    </tr>
+                    <tr>
+                        <td>Spotted Cow</td>
+                        <td>Cream Ale</td>
+                        <td>4.8</td>
+                        <td>3.89</td>
+                        <td>596</td>
+                        <td>21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Spaten Optimator</td>
+                        <td>Bock - Doppelbock</td>
+                        <td>7.6</td>
+                        <td>3.89</td>
+                        <td>1233</td>
+                        <td>21.00</td>
+                    </tr>
+                    <tr>
+                        <td>EKU 28</td>
+                        <td>Bock - Doppelbock</td>
+                        <td>11.0</td>
+                        <td>3.62</td>
+                        <td>422</td>
+                        <td>21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Horn Dog</td>
+                        <td>Barleywine - English</td>
+                        <td>10.2</td>
+                        <td>3.71</td>
+                        <td>784</td>
+                        <td>21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Old Chub - Scottish Style Ale</td>
+                        <td>Scotch Ale / Wee Heavy</td>
+                        <td>8.0</td>
+                        <td>3.96</td>
+                        <td>1236</td>
+                        <td>21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Immort Ale</td>
+                        <td>Strong Ale - English</td>
+                        <td>11.0</td>
+                        <td>3.67</td>
+                        <td>1007</td>
+                        <td>21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hefeweissbier Dunkel</td>
+                        <td>Wheat Beer - Dunkelweizen</td>
+                        <td>5.3</td>
+                        <td>4.32</td>
+                        <td>866</td>
+                        <td>21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hoegaarden Original White Ale</td>
+                        <td>Wheat Beer - Witbier</td>
+                        <td>4.9</td>
+                        <td>4.08</td>
+                        <td>1643</td>
+                        <td>21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Cream StoutBoston Beer Company (Samuel Adams)</td>
+                        <td>Stout - Sweet / Milk</td>
+                        <td>4.9</td>
+                        <td>3.99</td>
+                        <td>1239</td>
+                        <td>21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Trois Pistoles</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>9.0</td>
+                        <td>4.11</td>
+                        <td>1736</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Raison D'Extra</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>15.0</td>
+                        <td>3.60</td>
+                        <td>580</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shiner Hefeweizen</td>
+                        <td>Wheat Beer - Hefeweizen</td>
+                        <td>5.4</td>
+                        <td>3.46</td>
+                        <td>468</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pyramid Hefeweizen</td>
+                        <td>Wheat Beer - Hefeweizen</td>
+                        <td>5.2</td>
+                        <td>3.25</td>
+                        <td>414</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Temptation</td>
+                        <td>Wild Ale</td>
+                        <td>7.5</td>
+                        <td>4.39</td>
+                        <td>847</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Supplication</td>
+                        <td>Wild Ale</td>
+                        <td>7.8</td>
+                        <td>4.43</td>
+                        <td>1053</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hefe-Weissbier Naturtrüb</td>
+                        <td>Wheat Beer - Hefeweizen</td>
+                        <td>5.5</td>
+                        <td>4.19</td>
+                        <td>1235</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Choklat (Blackwater Series)</td>
+                        <td>Stout - American Imperial</td>
+                        <td>10.0</td>
+                        <td>4.06</td>
+                        <td>1198</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sinebrychoff Porter</td>
+                        <td>Porter - Baltic</td>
+                        <td>7.2</td>
+                        <td>4.16</td>
+                        <td>573</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Holiday PorterBoston Beer Company (Samuel Adams)</td>
+                        <td>Porter - American</td>
+                        <td>5.8</td>
+                        <td>3.82</td>
+                        <td>1118</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Porter</td>
+                        <td>Porter - American</td>
+                        <td>5.6</td>
+                        <td>4.05</td>
+                        <td>1253</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pumking</td>
+                        <td>Pumpkin Beer</td>
+                        <td>8.6</td>
+                        <td>3.83</td>
+                        <td>1356</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pannepot</td>
+                        <td>Quadrupel (Quad)</td>
+                        <td>10.0</td>
+                        <td>4.27</td>
+                        <td>655</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Salvator</td>
+                        <td>Bock - Doppelbock</td>
+                        <td>7.9</td>
+                        <td>3.89</td>
+                        <td>1222</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Genesee Cream Ale</td>
+                        <td>Cream Ale</td>
+                        <td>5.1</td>
+                        <td>3.35</td>
+                        <td>436</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Première (Red)</td>
+                        <td>Dubbel</td>
+                        <td>7.0</td>
+                        <td>4.08</td>
+                        <td>1485</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Oro De Calabaza</td>
+                        <td>Farmhouse Ale - Bière de Garde</td>
+                        <td>8.0</td>
+                        <td>4.07</td>
+                        <td>563</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Peroni Nastro Azzurro</td>
+                        <td>Lager - European Pale</td>
+                        <td>5.1</td>
+                        <td>2.98</td>
+                        <td>612</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Labatt Blue</td>
+                        <td>Lager - Adjunct</td>
+                        <td>5.0</td>
+                        <td>3.06</td>
+                        <td>607</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Red Stripe Jamaican Lager</td>
+                        <td>Lager - Adjunct</td>
+                        <td>4.7</td>
+                        <td>3.37</td>
+                        <td>894</td>
+                        <td>20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Rolling Rock Extra Pale</td>
+                        <td>Lager - Adjunct</td>
+                        <td>4.4</td>
+                        <td>3.09</td>
+                        <td>712</td>
+                        <td>19.00</td>
+                    </tr>
+                    <tr>
+                        <td>Purple Haze</td>
+                        <td>Fruit and Field Beer</td>
+                        <td>4.2</td>
+                        <td>3.27</td>
+                        <td>659</td>
+                        <td>19.00</td>
+                    </tr>
+                    <tr>
+                        <td>Blushing Monk</td>
+                        <td>Fruit and Field Beer</td>
+                        <td>9.2</td>
+                        <td>4.09</td>
+                        <td>403</td>
+                        <td>19.00</td>
+                    </tr>
+                    <tr>
+                        <td>Insanity</td>
+                        <td>Barleywine - English</td>
+                        <td>13.3</td>
+                        <td>3.98</td>
+                        <td>667</td>
+                        <td>19.00</td>
+                    </tr>
+                    <tr>
+                        <td>Christmas Ale</td>
+                        <td>Quadrupel (Quad)</td>
+                        <td>10.0</td>
+                        <td>4.07</td>
+                        <td>451</td>
+                        <td>19.00</td>
+                    </tr>
+                    <tr>
+                        <td>Ichabod Ale</td>
+                        <td>Pumpkin Beer</td>
+                        <td>4.5</td>
+                        <td>3.43</td>
+                        <td>439</td>
+                        <td>19.00</td>
+                    </tr>
+                    <tr>
+                        <td>Oak Aged Yeti Imperial Stout</td>
+                        <td>Stout - American Imperial</td>
+                        <td>9.5</td>
+                        <td>4.08</td>
+                        <td>1423</td>
+                        <td>19.00</td>
+                    </tr>
+                    <tr>
+                        <td>Beer Geek Brunch Weasel</td>
+                        <td>Stout - American Imperial</td>
+                        <td>10.9</td>
+                        <td>4.17</td>
+                        <td>600</td>
+                        <td>19.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Coastal WheatBoston Beer Company (Samuel Adams)</td>
+                        <td>Wheat Beer - American Pale</td>
+                        <td>5.3</td>
+                        <td>3.38</td>
+                        <td>475</td>
+                        <td>19.00</td>
+                    </tr>
+                    <tr>
+                        <td>White Rascal</td>
+                        <td>Wheat Beer - Witbier</td>
+                        <td>5.6</td>
+                        <td>3.81</td>
+                        <td>653</td>
+                        <td>19.00</td>
+                    </tr>
+                    <tr>
+                        <td>Local 2</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>9.0</td>
+                        <td>4.02</td>
+                        <td>443</td>
+                        <td>19.00</td>
+                    </tr>
+                    <tr>
+                        <td>The Mad Elf</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>11.0</td>
+                        <td>3.82</td>
+                        <td>1062</td>
+                        <td>19.00</td>
+                    </tr>
+                    <tr>
+                        <td>Milk Stout</td>
+                        <td>Stout - Sweet / Milk</td>
+                        <td>5.7</td>
+                        <td>3.88</td>
+                        <td>609</td>
+                        <td>19.00</td>
+                    </tr>
+                    <tr>
+                        <td>8 Ball Stout</td>
+                        <td>Stout - Oatmeal</td>
+                        <td>6.3</td>
+                        <td>3.91</td>
+                        <td>475</td>
+                        <td>19.00</td>
+                    </tr>
+                    <tr>
+                        <td>Oatmeal Stout</td>
+                        <td>Stout - Oatmeal</td>
+                        <td>5.4</td>
+                        <td>3.91</td>
+                        <td>485</td>
+                        <td>19.00</td>
+                    </tr>
+                    <tr>
+                        <td>Barney Flats Oatmeal Stout</td>
+                        <td>Stout - Oatmeal</td>
+                        <td>5.8</td>
+                        <td>4.09</td>
+                        <td>772</td>
+                        <td>18.00</td>
+                    </tr>
+                    <tr>
+                        <td>Guinness Draught</td>
+                        <td>Stout - Irish Dry</td>
+                        <td>4.2</td>
+                        <td>3.69</td>
+                        <td>2210</td>
+                        <td>18.00</td>
+                    </tr>
+                    <tr>
+                        <td>Plead The 5th Imperial Stout</td>
+                        <td>Stout - Russian Imperial</td>
+                        <td>11.0</td>
+                        <td>4.11</td>
+                        <td>507</td>
+                        <td>18.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shock Top Belgian White</td>
+                        <td>Wheat Beer - Witbier</td>
+                        <td>5.2</td>
+                        <td>3.25</td>
+                        <td>585</td>
+                        <td>18.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mokah</td>
+                        <td>Stout - American Imperial</td>
+                        <td>10.0</td>
+                        <td>3.95</td>
+                        <td>544</td>
+                        <td>18.00</td>
+                    </tr>
+                    <tr>
+                        <td>Murphy's Irish Stout</td>
+                        <td>Stout - Irish Dry</td>
+                        <td>4.0</td>
+                        <td>3.94</td>
+                        <td>893</td>
+                        <td>18.00</td>
+                    </tr>
+                    <tr>
+                        <td>CBS (Canadian Breakfast Stout)</td>
+                        <td>Stout - American Imperial</td>
+                        <td>11.3</td>
+                        <td>4.59</td>
+                        <td>637</td>
+                        <td>18.00</td>
+                    </tr>
+                    <tr>
+                        <td>The Abyss</td>
+                        <td>Stout - American Imperial</td>
+                        <td>11.4</td>
+                        <td>4.45</td>
+                        <td>1412</td>
+                        <td>18.00</td>
+                    </tr>
+                    <tr>
+                        <td>Punkin Ale</td>
+                        <td>Pumpkin Beer</td>
+                        <td>7.0</td>
+                        <td>3.86</td>
+                        <td>1848</td>
+                        <td>18.00</td>
+                    </tr>
+                    <tr>
+                        <td>The Reverend</td>
+                        <td>Quadrupel (Quad)</td>
+                        <td>10.0</td>
+                        <td>3.73</td>
+                        <td>734</td>
+                        <td>18.00</td>
+                    </tr>
+                    <tr>
+                        <td>Vanilla Porter</td>
+                        <td>Porter - American</td>
+                        <td>5.4</td>
+                        <td>3.43</td>
+                        <td>814</td>
+                        <td>18.00</td>
+                    </tr>
+                    <tr>
+                        <td>Éphémère (Apple)</td>
+                        <td>Fruit and Field Beer</td>
+                        <td>5.5</td>
+                        <td>3.62</td>
+                        <td>932</td>
+                        <td>18.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Black LagerBoston Beer Company (Samuel Adams)</td>
+                        <td>Lager - Schwarzbier</td>
+                        <td>4.9</td>
+                        <td>3.91</td>
+                        <td>1494</td>
+                        <td>18.00</td>
+                    </tr>
+                    <tr>
+                        <td>Michelob Ultra</td>
+                        <td>Lager - Light</td>
+                        <td>4.2</td>
+                        <td>2.16</td>
+                        <td>523</td>
+                        <td>18.00</td>
+                    </tr>
+                    <tr>
+                        <td>Aecht Schlenkerla Rauchbier Urbock</td>
+                        <td>Lager - Rauchbier</td>
+                        <td>6.6</td>
+                        <td>3.87</td>
+                        <td>574</td>
+                        <td>17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Rosé De Gambrinus</td>
+                        <td>Lambic - Fruit</td>
+                        <td>5.0</td>
+                        <td>4.01</td>
+                        <td>562</td>
+                        <td>17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tecate</td>
+                        <td>Lager - Adjunct</td>
+                        <td>4.5</td>
+                        <td>2.95</td>
+                        <td>485</td>
+                        <td>17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Corona Extra</td>
+                        <td>Lager - Adjunct</td>
+                        <td>4.6</td>
+                        <td>2.61</td>
+                        <td>1096</td>
+                        <td>17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Autumn Maple</td>
+                        <td>Fruit and Field Beer</td>
+                        <td>10.0</td>
+                        <td>3.63</td>
+                        <td>431</td>
+                        <td>17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Dubbel Ale</td>
+                        <td>Dubbel</td>
+                        <td>7.0</td>
+                        <td>3.83</td>
+                        <td>717</td>
+                        <td>17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Schneider Weisse Tap 6 Unser Aventinus</td>
+                        <td>Bock - Weizenbock</td>
+                        <td>8.2</td>
+                        <td>4.23</td>
+                        <td>1899</td>
+                        <td>17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saranac Caramel Porter</td>
+                        <td>Porter - American</td>
+                        <td>5.4</td>
+                        <td>2.98</td>
+                        <td>426</td>
+                        <td>17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Scotty Karate Scotch Ale</td>
+                        <td>Scotch Ale / Wee Heavy</td>
+                        <td>9.8</td>
+                        <td>3.89</td>
+                        <td>408</td>
+                        <td>17.00</td>
+                    </tr>
+                    <tr>
+                        <td>1809</td>
+                        <td>Sour - Berliner Weisse</td>
+                        <td>5.0</td>
+                        <td>4.18</td>
+                        <td>406</td>
+                        <td>17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Blackberry WitbierBoston Beer Company (Samuel Adams)</td>
+                        <td>Wheat Beer - Witbier</td>
+                        <td>5.5</td>
+                        <td>3.41</td>
+                        <td>658</td>
+                        <td>17.00</td>
+                    </tr>
+                    <tr>
+                        <td>DreamWeaver Wheat</td>
+                        <td>Wheat Beer - Hefeweizen</td>
+                        <td>4.8</td>
+                        <td>4.00</td>
+                        <td>560</td>
+                        <td>17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Christmas Ale</td>
+                        <td>Winter Warmer</td>
+                        <td>7.5</td>
+                        <td>3.88</td>
+                        <td>692</td>
+                        <td>17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Collaboration Not Litigation Ale</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>8.7</td>
+                        <td>3.88</td>
+                        <td>638</td>
+                        <td>17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Abbaye Des Rocs Grand Cru Belgian Special Brown</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>9.0</td>
+                        <td>4.14</td>
+                        <td>486</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Gulden Draak</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>10.5</td>
+                        <td>4.05</td>
+                        <td>1069</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Black OPS</td>
+                        <td>Stout - Russian Imperial</td>
+                        <td>11.6</td>
+                        <td>4.01</td>
+                        <td>579</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Schneider Weisse Tap 7 Unser Original</td>
+                        <td>Wheat Beer - Hefeweizen</td>
+                        <td>5.4</td>
+                        <td>4.09</td>
+                        <td>702</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Erdinger Weissbier (Hefe-Weizen)</td>
+                        <td>Wheat Beer - Hefeweizen</td>
+                        <td>5.3</td>
+                        <td>3.62</td>
+                        <td>683</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Kwak</td>
+                        <td>Strong Ale - Belgian Pale</td>
+                        <td>8.4</td>
+                        <td>3.70</td>
+                        <td>580</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pranqster</td>
+                        <td>Strong Ale - Belgian Pale</td>
+                        <td>7.6</td>
+                        <td>3.98</td>
+                        <td>1014</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Speedway Stout</td>
+                        <td>Stout - American Imperial</td>
+                        <td>12.0</td>
+                        <td>4.28</td>
+                        <td>1134</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Post Road Pumpkin Ale</td>
+                        <td>Pumpkin Beer</td>
+                        <td>5.0</td>
+                        <td>3.57</td>
+                        <td>741</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pumpkinhead Ale</td>
+                        <td>Pumpkin Beer</td>
+                        <td>4.5</td>
+                        <td>2.88</td>
+                        <td>692</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sanctification</td>
+                        <td>Brett Beer</td>
+                        <td>4.8</td>
+                        <td>4.33</td>
+                        <td>449</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Leffe Blonde</td>
+                        <td>Blonde Ale - Belgian</td>
+                        <td>6.6</td>
+                        <td>3.64</td>
+                        <td>1121</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Grimbergen Dubbel</td>
+                        <td>Dubbel</td>
+                        <td>6.5</td>
+                        <td>3.75</td>
+                        <td>446</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Wisconsin Belgian Red</td>
+                        <td>Fruit and Field Beer</td>
+                        <td>4.0</td>
+                        <td>4.24</td>
+                        <td>826</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pyramid Apricot Ale</td>
+                        <td>Fruit and Field Beer</td>
+                        <td>5.1</td>
+                        <td>3.48</td>
+                        <td>435</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Kriek 100% Lambic</td>
+                        <td>Lambic - Fruit</td>
+                        <td>5.0</td>
+                        <td>4.00</td>
+                        <td>534</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Rare Vos Amber Ale</td>
+                        <td>Pale Ale - Belgian</td>
+                        <td>6.5</td>
+                        <td>4.07</td>
+                        <td>977</td>
+                        <td>16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Budweiser</td>
+                        <td>Lager - Adjunct</td>
+                        <td>5.0</td>
+                        <td>2.88</td>
+                        <td>1487</td>
+                        <td>15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pabst Blue Ribbon (PBR)</td>
+                        <td>Lager - Adjunct</td>
+                        <td>4.7</td>
+                        <td>3.61</td>
+                        <td>1460</td>
+                        <td>15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Troegenator</td>
+                        <td>Bock - Doppelbock</td>
+                        <td>8.2</td>
+                        <td>3.90</td>
+                        <td>892</td>
+                        <td>15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Double Bock (Imperial Series)Boston Beer Company (Samuel Adams)</td>
+                        <td>Bock - Doppelbock</td>
+                        <td>9.5</td>
+                        <td>3.82</td>
+                        <td>1068</td>
+                        <td>15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Michelob AmberBock</td>
+                        <td>Bock - Traditional</td>
+                        <td>5.2</td>
+                        <td>3.13</td>
+                        <td>689</td>
+                        <td>15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Vitus</td>
+                        <td>Bock - Weizenbock</td>
+                        <td>7.7</td>
+                        <td>4.25</td>
+                        <td>677</td>
+                        <td>15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Prior 8</td>
+                        <td>Dubbel</td>
+                        <td>8.0</td>
+                        <td>4.12</td>
+                        <td>870</td>
+                        <td>15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Abbey Ale</td>
+                        <td>Dubbel</td>
+                        <td>8.2</td>
+                        <td>4.04</td>
+                        <td>1546</td>
+                        <td>15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Backwoods Bastard</td>
+                        <td>Scotch Ale / Wee Heavy</td>
+                        <td>11.2</td>
+                        <td>3.99</td>
+                        <td>1020</td>
+                        <td>15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Merry Monks</td>
+                        <td>Tripel</td>
+                        <td>9.3</td>
+                        <td>3.74</td>
+                        <td>649</td>
+                        <td>15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Trappistes Rochefort 8</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>9.2</td>
+                        <td>4.23</td>
+                        <td>1561</td>
+                        <td>15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Beamish Irish Stout</td>
+                        <td>Stout - Irish Dry</td>
+                        <td>4.1</td>
+                        <td>4.03</td>
+                        <td>606</td>
+                        <td>14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Golden Monkey</td>
+                        <td>Tripel</td>
+                        <td>9.5</td>
+                        <td>3.67</td>
+                        <td>1520</td>
+                        <td>14.00</td>
+                    </tr>
+                    <tr>
+                        <td>La Roja</td>
+                        <td>Sour - Flanders Red Ale</td>
+                        <td>7.2</td>
+                        <td>3.92</td>
+                        <td>654</td>
+                        <td>14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Buffalo Bill's Pumpkin Ale</td>
+                        <td>Pumpkin Beer</td>
+                        <td>6.0</td>
+                        <td>2.85</td>
+                        <td>616</td>
+                        <td>14.00</td>
+                    </tr>
+                    <tr>
+                        <td>La Trappe Quadrupel (Koningshoeven / Dominus)</td>
+                        <td>Quadrupel (Quad)</td>
+                        <td>10.0</td>
+                        <td>3.96</td>
+                        <td>725</td>
+                        <td>14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Schneider Aventinus Eisbock</td>
+                        <td>Bock - Eisbock</td>
+                        <td>12.0</td>
+                        <td>3.92</td>
+                        <td>938</td>
+                        <td>14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Palo Santo Marron</td>
+                        <td>Brown Ale - American</td>
+                        <td>12.0</td>
+                        <td>3.93</td>
+                        <td>1661</td>
+                        <td>14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samichlaus Classic Bier</td>
+                        <td>Bock - Doppelbock</td>
+                        <td>14.0</td>
+                        <td>3.65</td>
+                        <td>922</td>
+                        <td>14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Chocolate BockBoston Beer Company (Samuel Adams)</td>
+                        <td>Bock - Traditional</td>
+                        <td>5.8</td>
+                        <td>3.64</td>
+                        <td>1014</td>
+                        <td>14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Miller High Life</td>
+                        <td>Lager - Adjunct</td>
+                        <td>4.6</td>
+                        <td>3.36</td>
+                        <td>1040</td>
+                        <td>14.00</td>
+                    </tr>
+                    <tr>
+                        <td>1554</td>
+                        <td>Lager - European Dark</td>
+                        <td>6.0</td>
+                        <td>3.96</td>
+                        <td>1159</td>
+                        <td>14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Père Jacques</td>
+                        <td>Dubbel</td>
+                        <td>8.7</td>
+                        <td>3.89</td>
+                        <td>684</td>
+                        <td>13.00</td>
+                    </tr>
+                    <tr>
+                        <td>Trappistes Rochefort 10</td>
+                        <td>Quadrupel (Quad)</td>
+                        <td>11.3</td>
+                        <td>4.34</td>
+                        <td>2170</td>
+                        <td>13.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Harvest Pumpkin AleBoston Beer Company (Samuel Adams)</td>
+                        <td>Pumpkin Beer</td>
+                        <td>5.7</td>
+                        <td>3.67</td>
+                        <td>404</td>
+                        <td>13.00</td>
+                    </tr>
+                    <tr>
+                        <td>Smoked Porter</td>
+                        <td>Porter - Smoked</td>
+                        <td>6.5</td>
+                        <td>4.12</td>
+                        <td>812</td>
+                        <td>13.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pipeline Porter</td>
+                        <td>Porter - American</td>
+                        <td>5.3</td>
+                        <td>3.87</td>
+                        <td>574</td>
+                        <td>13.00</td>
+                    </tr>
+                    <tr>
+                        <td>Raison D'Être</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>8.0</td>
+                        <td>3.57</td>
+                        <td>1704</td>
+                        <td>13.00</td>
+                    </tr>
+                    <tr>
+                        <td>Milk Stout</td>
+                        <td>Stout - Sweet / Milk</td>
+                        <td>5.3</td>
+                        <td>3.92</td>
+                        <td>431</td>
+                        <td>12.00</td>
+                    </tr>
+                    <tr>
+                        <td>Gouden Carolus Noël / Christmas</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>10.5</td>
+                        <td>3.90</td>
+                        <td>417</td>
+                        <td>12.00</td>
+                    </tr>
+                    <tr>
+                        <td>The Poet</td>
+                        <td>Stout - Oatmeal</td>
+                        <td>5.2</td>
+                        <td>4.00</td>
+                        <td>561</td>
+                        <td>12.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hacker-Pschorr Hefe Weisse Naturtrüb</td>
+                        <td>Wheat Beer - Hefeweizen</td>
+                        <td>5.5</td>
+                        <td>4.15</td>
+                        <td>702</td>
+                        <td>12.00</td>
+                    </tr>
+                    <tr>
+                        <td>Lion Stout</td>
+                        <td>Stout - Foreign / Export</td>
+                        <td>8.8</td>
+                        <td>4.01</td>
+                        <td>802</td>
+                        <td>12.00</td>
+                    </tr>
+                    <tr>
+                        <td>Monk's Café Flemish Sour Ale</td>
+                        <td>Sour - Flanders Oud Bruin</td>
+                        <td>5.5</td>
+                        <td>3.83</td>
+                        <td>866</td>
+                        <td>12.00</td>
+                    </tr>
+                    <tr>
+                        <td>Maudite</td>
+                        <td>Dubbel</td>
+                        <td>8.0</td>
+                        <td>4.14</td>
+                        <td>1730</td>
+                        <td>12.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Cherry WheatBoston Beer Company (Samuel Adams)</td>
+                        <td>Fruit and Field Beer</td>
+                        <td>5.3</td>
+                        <td>3.17</td>
+                        <td>1107</td>
+                        <td>12.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sapporo Premium Beer</td>
+                        <td>Lager - American</td>
+                        <td>4.9</td>
+                        <td>3.17</td>
+                        <td>503</td>
+                        <td>12.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bud Light</td>
+                        <td>Lager - Light</td>
+                        <td>4.2</td>
+                        <td>2.42</td>
+                        <td>1302</td>
+                        <td>12.00</td>
+                    </tr>
+                    <tr>
+                        <td>Molson Canadian Lager</td>
+                        <td>Lager - Adjunct</td>
+                        <td>5.0</td>
+                        <td>3.29</td>
+                        <td>465</td>
+                        <td>11.00</td>
+                    </tr>
+                    <tr>
+                        <td>Raspberry Tart</td>
+                        <td>Fruit and Field Beer</td>
+                        <td>4.0</td>
+                        <td>4.22</td>
+                        <td>710</td>
+                        <td>11.00</td>
+                    </tr>
+                    <tr>
+                        <td>Korbinian</td>
+                        <td>Bock - Doppelbock</td>
+                        <td>7.4</td>
+                        <td>4.17</td>
+                        <td>947</td>
+                        <td>11.00</td>
+                    </tr>
+                    <tr>
+                        <td>Maredsous 10 - Triple</td>
+                        <td>Tripel</td>
+                        <td>10.0</td>
+                        <td>3.83</td>
+                        <td>616</td>
+                        <td>11.00</td>
+                    </tr>
+                    <tr>
+                        <td>Franziskaner Hefe-Weisse</td>
+                        <td>Wheat Beer - Hefeweizen</td>
+                        <td>5.0</td>
+                        <td>4.15</td>
+                        <td>1528</td>
+                        <td>11.00</td>
+                    </tr>
+                    <tr>
+                        <td>Parabola</td>
+                        <td>Stout - Russian Imperial</td>
+                        <td>13.0</td>
+                        <td>4.42</td>
+                        <td>595</td>
+                        <td>11.00</td>
+                    </tr>
+                    <tr>
+                        <td>The Angel's Share - Bourbon Barrel-Aged</td>
+                        <td>Strong Ale - American</td>
+                        <td>12.5</td>
+                        <td>4.01</td>
+                        <td>534</td>
+                        <td>11.00</td>
+                    </tr>
+                    <tr>
+                        <td>Delirium Noël (Christmas)</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>10.0</td>
+                        <td>3.87</td>
+                        <td>680</td>
+                        <td>10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Old Fezziwig AleBoston Beer Company (Samuel Adams)</td>
+                        <td>Winter Warmer</td>
+                        <td>5.9</td>
+                        <td>3.81</td>
+                        <td>1230</td>
+                        <td>10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Festina Pêche</td>
+                        <td>Sour - Berliner Weisse</td>
+                        <td>4.5</td>
+                        <td>3.69</td>
+                        <td>1086</td>
+                        <td>10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Baltika #6 Porter</td>
+                        <td>Porter - Baltic</td>
+                        <td>7.0</td>
+                        <td>3.69</td>
+                        <td>549</td>
+                        <td>10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Three Philosophers</td>
+                        <td>Quadrupel (Quad)</td>
+                        <td>9.7</td>
+                        <td>3.99</td>
+                        <td>1683</td>
+                        <td>10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Quad</td>
+                        <td>Quadrupel (Quad)</td>
+                        <td>11.8</td>
+                        <td>3.66</td>
+                        <td>457</td>
+                        <td>10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Framboise</td>
+                        <td>Lambic - Fruit</td>
+                        <td>2.5</td>
+                        <td>3.84</td>
+                        <td>903</td>
+                        <td>10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Miller Lite</td>
+                        <td>Lager - Light</td>
+                        <td>4.2</td>
+                        <td>2.76</td>
+                        <td>1082</td>
+                        <td>9.00</td>
+                    </tr>
+                    <tr>
+                        <td>Keystone LightCoors Brewing Company (Molson-Coors)</td>
+                        <td>Lager - Light</td>
+                        <td>4.1</td>
+                        <td>2.59</td>
+                        <td>440</td>
+                        <td>9.00</td>
+                    </tr>
+                    <tr>
+                        <td>Miller Genuine Draft</td>
+                        <td>Lager - Adjunct</td>
+                        <td>4.7</td>
+                        <td>2.66</td>
+                        <td>607</td>
+                        <td>9.00</td>
+                    </tr>
+                    <tr>
+                        <td>Theobroma</td>
+                        <td>Chile Beer</td>
+                        <td>9.0</td>
+                        <td>3.70</td>
+                        <td>633</td>
+                        <td>9.00</td>
+                    </tr>
+                    <tr>
+                        <td>Moonglow Weizenbock</td>
+                        <td>Bock - Weizenbock</td>
+                        <td>8.7</td>
+                        <td>3.97</td>
+                        <td>654</td>
+                        <td>9.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cerise</td>
+                        <td>Fruit and Field Beer</td>
+                        <td>6.5</td>
+                        <td>3.68</td>
+                        <td>489</td>
+                        <td>9.00</td>
+                    </tr>
+                    <tr>
+                        <td>Imperial Pumpkin Ale</td>
+                        <td>Pumpkin Beer</td>
+                        <td>8.0</td>
+                        <td>3.81</td>
+                        <td>844</td>
+                        <td>9.00</td>
+                    </tr>
+                    <tr>
+                        <td>Goudenband</td>
+                        <td>Sour - Flanders Oud Bruin</td>
+                        <td>8.0</td>
+                        <td>4.13</td>
+                        <td>469</td>
+                        <td>9.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bourbon County Brand Coffee Stout</td>
+                        <td>Stout - American Imperial</td>
+                        <td>12.9</td>
+                        <td>4.32</td>
+                        <td>456</td>
+                        <td>9.00</td>
+                    </tr>
+                    <tr>
+                        <td>Consecration</td>
+                        <td>Wild Ale</td>
+                        <td>10.0</td>
+                        <td>4.30</td>
+                        <td>844</td>
+                        <td>9.00</td>
+                    </tr>
+                    <tr>
+                        <td>Franziskaner Hefe-Weisse Dunkel</td>
+                        <td>Wheat Beer - Dunkelweizen</td>
+                        <td>5.0</td>
+                        <td>3.92</td>
+                        <td>747</td>
+                        <td>9.00</td>
+                    </tr>
+                    <tr>
+                        <td>Winter Solstice Seasonal Ale</td>
+                        <td>Winter Warmer</td>
+                        <td>6.9</td>
+                        <td>3.85</td>
+                        <td>602</td>
+                        <td>8.00</td>
+                    </tr>
+                    <tr>
+                        <td>Brother Thelonious</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>9.4</td>
+                        <td>3.74</td>
+                        <td>791</td>
+                        <td>8.00</td>
+                    </tr>
+                    <tr>
+                        <td>Rodenbach Classic (Red)</td>
+                        <td>Sour - Flanders Red Ale</td>
+                        <td>5.2</td>
+                        <td>4.10</td>
+                        <td>532</td>
+                        <td>8.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bourbon County Brand Stout</td>
+                        <td>Stout - American Imperial</td>
+                        <td>14.7</td>
+                        <td>4.08</td>
+                        <td>1710</td>
+                        <td>8.00</td>
+                    </tr>
+                    <tr>
+                        <td>The Sixth Glass Quadrupel Ale</td>
+                        <td>Quadrupel (Quad)</td>
+                        <td>10.2</td>
+                        <td>3.98</td>
+                        <td>434</td>
+                        <td>8.00</td>
+                    </tr>
+                    <tr>
+                        <td>Terrible</td>
+                        <td>Quadrupel (Quad)</td>
+                        <td>10.5</td>
+                        <td>4.07</td>
+                        <td>813</td>
+                        <td>8.00</td>
+                    </tr>
+                    <tr>
+                        <td>Original Honey Brown Extra Rich Lager (Beer Brewed With Honey)</td>
+                        <td>Lager - American Amber / Red</td>
+                        <td>4.5</td>
+                        <td>3.32</td>
+                        <td>652</td>
+                        <td>8.00</td>
+                    </tr>
+                    <tr>
+                        <td>Kriek</td>
+                        <td>Lambic - Fruit</td>
+                        <td>3.5</td>
+                        <td>3.84</td>
+                        <td>471</td>
+                        <td>7.00</td>
+                    </tr>
+                    <tr>
+                        <td>Fort</td>
+                        <td>Fruit and Field Beer</td>
+                        <td>18.0</td>
+                        <td>3.31</td>
+                        <td>470</td>
+                        <td>7.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pater 6</td>
+                        <td>Dubbel</td>
+                        <td>6.7</td>
+                        <td>4.17</td>
+                        <td>556</td>
+                        <td>7.00</td>
+                    </tr>
+                    <tr>
+                        <td>Summer Shandy</td>
+                        <td>Fruit and Field Beer</td>
+                        <td>4.2</td>
+                        <td>3.24</td>
+                        <td>447</td>
+                        <td>5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Black &amp; Blue</td>
+                        <td>Fruit and Field Beer</td>
+                        <td>10.0</td>
+                        <td>3.61</td>
+                        <td>444</td>
+                        <td>5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Trappist Westvleteren 12 (XII)Brouwerij Westvleteren (Sint-Sixtusabdij van Westvleteren)</td>
+                        <td>Quadrupel (Quad)</td>
+                        <td>10.2</td>
+                        <td>4.62</td>
+                        <td>1272</td>
+                        <td>5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Duchesse De Bourgogne</td>
+                        <td>Sour - Flanders Red Ale</td>
+                        <td>6.2</td>
+                        <td>3.94</td>
+                        <td>1200</td>
+                        <td>5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Grande Réserve (Blue)</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>9.0</td>
+                        <td>4.25</td>
+                        <td>2009</td>
+                        <td>5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Dark Lord Imperial Stout</td>
+                        <td>Stout - Russian Imperial</td>
+                        <td>15.0</td>
+                        <td>4.15</td>
+                        <td>1011</td>
+                        <td>5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Nostradamus</td>
+                        <td>Strong Ale - Belgian Dark</td>
+                        <td>9.0</td>
+                        <td>3.99</td>
+                        <td>456</td>
+                        <td>4.00</td>
+                    </tr>
+                    <tr>
+                        <td>Rodenbach Grand Cru</td>
+                        <td>Sour - Flanders Red Ale</td>
+                        <td>6.0</td>
+                        <td>4.11</td>
+                        <td>811</td>
+                        <td>4.00</td>
+                    </tr>
+                    <tr>
+                        <td>Samuel Adams Cranberry LambicBoston Beer Company (Samuel Adams)</td>
+                        <td>Fruit and Field Beer</td>
+                        <td>5.9</td>
+                        <td>2.68</td>
+                        <td>918</td>
+                        <td>4.00</td>
+                    </tr>
+                    <tr>
+                        <td>Natural Light</td>
+                        <td>Lager - Light</td>
+                        <td>4.2</td>
+                        <td>2.52</td>
+                        <td>532</td>
+                        <td>4.00</td>
+                    </tr>
+                    <tr>
+                        <td>Steel Reserve 211 (High Gravity)</td>
+                        <td>Lager - Malt Liquor</td>
+                        <td>8.1</td>
+                        <td>2.61</td>
+                        <td>460</td>
+                        <td>3.00</td>
+                    </tr>
+                    <tr>
+                        <td>La Folie</td>
+                        <td>Sour - Flanders Oud Bruin</td>
+                        <td>7.0</td>
+                        <td>4.06</td>
+                        <td>751</td>
+                        <td>3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hunahpu's Imperial Stout</td>
+                        <td>Stout - American Imperial</td>
+                        <td>10.2</td>
+                        <td>4.37</td>
+                        <td>429</td>
+                        <td>3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pêche</td>
+                        <td>Lambic - Fruit</td>
+                        <td>2.5</td>
+                        <td>3.96</td>
+                        <td>412</td>
+                        <td>1.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

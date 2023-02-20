@@ -1,0 +1,74 @@
+﻿
+<table>
+  <caption>Beers</caption>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Style</th>
+      <th>ABV</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Heady Topper</td>
+      <td>IPA - New England</td>
+      <td>8.0</td>
+      <td>4.63</td>
+    </tr>
+    <tr>
+      <td>Trappist Westvleteren 12 (XII)Brouwerij Westvleteren (Sint-Sixtusabdij van Westvleteren)</td>
+      <td>Quadrupel (Quad)</td>
+      <td>10.2</td>
+      <td>4.62</td>
+    </tr>
+    <tr>
+      <td>Pliny The Younger</td>
+      <td>IPA - Imperial</td>
+      <td>10.3</td>
+      <td>4.60</td>
+    </tr>
+    <tr>
+      <td>CBS (Canadian Breakfast Stout)</td>
+      <td>Stout - American Imperial</td>
+      <td>11.3</td>
+      <td>4.59</td>
+    </tr>
+    <tr>
+      <td>Pliny The Elder</td>
+      <td>IPA - Imperial</td>
+      <td>8.0</td>
+      <td>4.59</td>
+    </tr>
+    <tr>
+      <td>Hefeweissbier</td>
+      <td>Wheat Beer - Hefeweizen</td>
+      <td>5.4</td>
+      <td>4.52</td>
+    </tr>
+    <tr>
+      <td>Trappist Westvleteren 8 (VIII)Brouwerij Westvleteren (Sint-Sixtusabdij van Westvleteren)</td>
+      <td>Dubbel</td>
+      <td>8.0</td>
+      <td>4.51</td>
+    </tr>
+    <tr>
+      <td>The Abyss</td>
+      <td>Stout - American Imperial</td>
+      <td>11.4</td>
+      <td>4.45</td>
+    </tr>
+    <tr>
+      <td>Supplication</td>
+      <td>Wild Ale</td>
+      <td>7.8</td>
+      <td>4.43</td>
+    </tr>
+    <tr>
+      <td>Abrasive Ale</td>
+      <td>IPA - Imperial</td>
+      <td>9.2</td>
+      <td>4.43</td>
+    </tr>
+  </tbody>
+</table>
